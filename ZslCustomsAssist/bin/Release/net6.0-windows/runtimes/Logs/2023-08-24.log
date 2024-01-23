@@ -1,0 +1,35 @@
+﻿程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2023-08-24 15:36:50,349--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2023-08-24 15:36:50,368--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:36:53,291--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:36:53,318--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.Jobs.ClearTimeOutFileJob-ClearFile][55][INFO][6] 2023-08-24 15:36:53,485--D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Release\net6.0-windows\Log不存在，取消清除！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:36:53,502--E-PortMsg：获取卡内证书算法标识成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:36:53,503--E-PortMsg：获取证书号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:36:53,590--E-PortMsg：获取申请者名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:36:53,591--E-PortMsg：获取单位代码成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:36:53,591--E-PortMsg：获取单位名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:36:53,591--E-PortMsg：获取单位类别成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:36:53,599--E-PortMsg：获取卡签名证书成功！
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][71][INFO][1] 2023-08-24 15:36:53,666--本次同步配置共耗时：0.058s
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][119][ERROR][1] 2023-08-24 15:36:53,672--同步配置失败(0.2.1)：IC卡号【JJ0G900242737】或IP【192.168.0.121】或MAC地址【08:8E:90:AB:3C:6D】不正确，请重新输入！
+[ZslCustomsAssist.FormLogin-FormLogin_Load][127][INFO][1] 2023-08-24 15:36:58,658--当前IC卡号：JJ0G900242737
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:37:25,986--E-PortMsg：获取卡内证书算法标识成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:37:25,987--E-PortMsg：获取证书号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:37:25,987--E-PortMsg：获取申请者名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:37:25,987--E-PortMsg：获取单位代码成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:37:25,987--E-PortMsg：获取单位名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:37:25,987--E-PortMsg：获取单位类别成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2023-08-24 15:37:25,994--E-PortMsg：获取卡签名证书成功！
+[ZslCustomsAssist.Utils.Log.LogHelper-SaveLog][113][INFO][1] 2023-08-24 15:37:26,051--调用中商旅辅助系统登录返回结果：{"code":0,"msg":"success","data":{"token":"039a8b5756b4e3cf5c40dfacdf211e7f","validity":7200,"appid":"0a971fbd56e28320c5df33591e2f321e"}}
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][71][INFO][1] 2023-08-24 15:37:27,619--本次同步配置共耗时：1.525s
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][119][ERROR][1] 2023-08-24 15:37:27,622--同步配置失败(0.2.1)：IC卡号【JJ0G900242737】或IP【192.168.0.121】或MAC地址【08:8E:90:AB:3C:6D】不正确，请重新输入！
+[ZslCustomsAssist.FormLogin-FormLogin_Load][127][INFO][1] 2023-08-24 15:37:29,060--当前IC卡号：JJ0G900242737
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][4] 2023-08-24 15:37:30,608--E-PortMsg：关闭加密设备成功！
+[ZslCustomsAssist.Jobs.ExitProgramJob+<>c__DisplayClass2_0-<QuitApplication>b__0][61][INFO][4] 2023-08-24 15:37:30,615--本次启动:
+发送报文数	0
+发送失败报文数	0
+接收回执数	0
+写入回执数	0
+程序退出！
+程序关闭!!!!!!

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DataInfo xmlns="http://www.w3.org/2000/09/xmldsig#">
+  <SignedData>
+    <EnvelopInfo>
+      <Message_Type>USF001</Message_Type>
+      <Master_Customs_Code>${CustomMaster}</Master_Customs_Code>
+    </EnvelopInfo>
+    <Data>
+      <PRE_ENTRY_ID>${SeqNo}</PRE_ENTRY_ID>
+      <ENTRY_ID>${EntryId}</ENTRY_ID>
+      <FILE_NAME>${EdocID}</FILE_NAME>
+      <FORMAT_TYPE>${EdocFomatType}</FORMAT_TYPE>
+      <TRADE_CODE>${EdocOwnerCode}</TRADE_CODE>
+      <MASTER_CUSTOMS_CODE>${CustomMaster}</MASTER_CUSTOMS_CODE>
+      <GROUP_ID/>
+      <TRADE_FILE_NAME>${EdocCopId}</TRADE_FILE_NAME>
+      <DECL_TYPE>F</DECL_TYPE>
+      <DECL_TIME>${DECL_TIME}</DECL_TIME>
+      <DECL_CODE>${TypistNo}</DECL_CODE>
+      <DECL_NAME>${DECL_NAME}</DECL_NAME>
+      <FILE_TYPE>${EdocCode}</FILE_TYPE>
+      <FILE_SOURCE/>
+      <FILE_DIGEST/>
+      <SIGN_CERT/>
+      <FILE_SIGN/>
+      <OP_NOTE>${OpNote}</OP_NOTE>
+    </Data>
+    <SubSignedInfo>
+      <SignerID/>
+      <KeyName/>
+      <HashSign/>
+    </SubSignedInfo>
+  </SignedData>
+</DataInfo>

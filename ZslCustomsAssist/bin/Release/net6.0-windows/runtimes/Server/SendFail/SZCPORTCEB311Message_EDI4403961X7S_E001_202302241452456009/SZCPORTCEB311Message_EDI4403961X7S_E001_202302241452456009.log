@@ -1,0 +1,5 @@
+加签失败:错误原因:[智能卡应用模块]输入参数错误:错误码=51500堆栈信息:   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 368
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcSignData(String inData) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 37
+   at ZslCustomsAssist.Utils.SignXmlUtil.SignXmlDoc(XmlDocument xmlDoc, String digestValue) in D:\file\ZslCustomsAssist\ZslCustomsAssist\Utils\SignXmlUtil.cs:line 37
+   at ZslCustomsAssist.Utils.DeclareMessageXmlSign.XmlSign(String report, String privateKeyStr, String publicKeyStr) in D:\file\ZslCustomsAssist\ZslCustomsAssist\Utils\DeclareMessageXmlSign.cs:line 29
+   at ZslCustomsAssist.Jobs.ReportSendJob.SendReport(String fullPath) in D:\file\ZslCustomsAssist\ZslCustomsAssist\Jobs\ReportSendJob.cs:line 365

@@ -1,0 +1,85 @@
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.Diagnostics;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ZslCustomsAssist.Runtime;
+using ZslCustomsAssist.Server.Enum;
+using ZslCustomsAssist.Service.Rest;
+using ZslCustomsAssist.Service;
+using ZslCustomsAssist.Utils;
+using ZslCustomsAssist.Utils.Log;
+
+namespace ZslCustomsAssist.Jobs
+{
+    internal class SendAbstractRequestJob
+    {
+        public void OnDoJob()
+        {
+            if (ServerCore.clientConfig.ReportSendDir != "" && !Directory.Exists(ServerCore.clientConfig.ReportSendDir))
+            {
+                Directory.CreateDirectory(ServerCore.clientConfig.ReportSendDir);
+            }
+
+            while (true)
+            {
+                if (!ServerCore.IsExitThread)
+                {
+                    try
+                    {
+                        // RequestReportJd();
+                        RequestReport();
+
+                    }
+                    catch (Exception ex)
+                    {
+                        AbstractLog.logger.Error((object)"请求报文异常", ex);
+                    }
+                    Thread.Sleep(5000);
+                }
+                else
+                    break;
+            }
+        }
+
+        public void RequestReport()
+        {
+            Stopwatch stopwatch = new Stopwatch();
+            long wholeMilliseconds = 0;
+            stopwatch.Start();
+
+            ApiService apiService = new();
+            List<AbstractMessage> reports = null;
+            try
+            {
+                reports = apiService.RequestAbstract(out string msg);
+
+            }
+            catch (Exception ex)
+            {
+                string str = "获取摘要发生异常！（耗时：" + (object)DateHelper.GetStopWatchTime(ref wholeMilliseconds, stopwatch, true) + "ms）";
+                AbstractLog.logger.Error((object)str, ex);
+            }
+            //MessageBox.Show(reports.Count.ToString());
+
+            if (reports != null && reports.Count > 0)
+            {
+                AbstractLog.logger.Error("请求摘要数据=============================");
+                List<string> strArr = new List<string>();
+                foreach (AbstractMessage report in reports)
+                {
+
+                    string jsonStr = JsonConvert.SerializeObject(report, Formatting.Indented);
+                    AbstractLog.logger.Error((object)jsonStr + "请求摘要数据=============================111");
+                   
+                }
+            }
+
+            stopwatch.Stop();
+            //AbstractLog.logger.Debug((object)("获取订单报文，本次请求耗时：" + (object)wholeMilliseconds + "ms"));
+        }
+
+    }
+}

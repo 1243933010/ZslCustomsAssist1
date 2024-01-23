@@ -1,0 +1,26 @@
+﻿using Newtonsoft.Json;
+
+namespace ZslCustomsAssist.Service.Rest
+{
+    [Serializable]
+    internal class ReportMessage
+    {
+        [JsonProperty(PropertyName = "id")]
+        public string ID { get; set; }
+
+        [JsonProperty(PropertyName = "type")]
+        public int Type { get; set; }
+
+        [JsonProperty(PropertyName = "guid")]
+        public string Guid { get; set; }
+
+        [JsonProperty(PropertyName = "orderNo")]
+        public string OrderNo { get; set; }
+
+        [JsonProperty(PropertyName = "fileName")]
+        public string FileName { get; set; }
+
+        [JsonProperty(PropertyName = "xmlMessage")]
+        public string XmlMessage { get; set; }
+    }
+}

@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ZslCustomsAssist</id>
+    <version>1.0.0</version>
+    <authors>ZslCustomsAssist</authors>
+    <description>Package Description</description>
+    <dependencies>
+      <group targetFramework="net6.0-windows7.0">
+        <dependency id="BouncyCastle" version="1.8.9" exclude="Build,Analyzers" />
+        <dependency id="ICSharpCode.SharpZipLib.dll" version="0.85.4.369" exclude="Build,Analyzers" />
+        <dependency id="Newtonsoft.Json" version="13.0.1" exclude="Build,Analyzers" />
+        <dependency id="System.Management" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Security.Cryptography.Xml" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.ServiceProcess.ServiceController" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="System.Text.Encoding.CodePages" version="7.0.0" exclude="Build,Analyzers" />
+        <dependency id="log4net" version="2.0.15" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+    <frameworkReferences>
+      <group targetFramework="net6.0-windows7.0">
+        <frameworkReference name="Microsoft.WindowsDesktop.App.WindowsForms" />
+      </group>
+    </frameworkReferences>
+  </metadata>
+  <files>
+    <file src="D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Debug\net6.0-windows\ZslCustomsAssist.runtimeconfig.json" target="lib\net6.0-windows7.0\ZslCustomsAssist.runtimeconfig.json" />
+    <file src="D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Debug\net6.0-windows\ZslCustomsAssist.dll" target="lib\net6.0-windows7.0\ZslCustomsAssist.dll" />
+  </files>
+</package>

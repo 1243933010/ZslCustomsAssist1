@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="GB2312" standalone="yes" ?>
+<eport_gb>
+    <device_define>
+        <device tag="A">eptskf.dll</device>
+        <device tag="B">OpsSkf.dll</device>
+        <device tag="C">EpKeyThirdWQ.dll</device>
+        <device tag="D">EpKeyThirdTDR.dll</device>
+        <device tag="E">EpKeyThirdHD.dll</device>
+        <device tag="F">eptskf64.dll</device>
+        <device tag="G">epskfapi64.dll</device>
+        <device tag="H">EpKeyThirdWQ64.dll</device>
+        <device tag="I">EpKeyThirdTDR64.dll</device>
+        <device tag="J">EpKeyThirdHD64.dll</device>
+    </device_define>
+    <device_group1>
+        <group index="1">DCABE</group>
+        <group index="2">FGHIJ</group>
+    </device_group1>
+</eport_gb>

@@ -1,0 +1,29 @@
+<?xml version="1.0" standalone="no" ?>
+<!-- Our to do list data -->
+<RdrManager>
+    <EnumTypes>
+	<ReaderType>SD</ReaderType>
+	<ReaderType>PCSC</ReaderType>
+	<ReaderType>HID</ReaderType>
+	<ReaderType>MSD</ReaderType>
+    </EnumTypes>
+    
+    <SD>
+    	<ReaderInfo>GX</ReaderInfo>
+    	<ReaderInfo>GM</ReaderInfo>
+    </SD>
+    
+    <PCSC>
+       	<ReaderInfo>SCR2000</ReaderInfo>
+    	<ReaderInfo>General</ReaderInfo>
+     </PCSC>
+    
+    <HID>
+    	<ReaderInfo>vid</ReaderInfo>
+    </HID>
+    
+    <MSD>	
+    	<ReaderInfo>vname</ReaderInfo>
+    </MSD>
+     
+</RdrManager>

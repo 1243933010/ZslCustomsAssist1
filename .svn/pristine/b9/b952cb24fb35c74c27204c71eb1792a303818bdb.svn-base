@@ -1,0 +1,120 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using ZslCustomsAssist.Runtime;
+using ZslCustomsAssist.Server.Enum;
+using ZslCustomsAssist.Utils.Log;
+
+namespace ZslCustomsAssist.Jobs
+{
+    public class RefreshMainFormInformationJob : AbstractLog
+    {
+        public void OnDoJob()
+        {
+            new Thread(new ThreadStart(this.RefreshNum)).Start();
+            new Thread(new ThreadStart(this.RefreshLog)).Start();
+        }
+
+        public void RefreshNum()
+        {
+            while (true)
+            {
+                try
+                {
+                    this.RefreshFormNum();
+                }
+                catch (Exception ex)
+                {
+                    AbstractLog.logger.Error((object)"刷新界面计数线程异常！", ex);
+                }
+                finally
+                {
+                    Thread.Sleep(500);
+                }
+            }
+        }
+
+        public void RefreshLog()
+        {
+            while (true)
+            {
+                try
+                {
+                    this.RefreshMainLogs();
+                }
+                catch (Exception ex)
+                {
+                    AbstractLog.logger.Error((object)"刷新界面日志线程异常！", ex);
+                }
+                finally
+                {
+                    Thread.Sleep(10000);
+                }
+            }
+        }
+
+        public void RefreshFormNum()
+        {
+            if (!ServerCore.ReportScanedSum.ToString().Equals(ServerCore.MainForm.labSendTotal.Text))
+                ServerCore.MainForm.labSendTotal.Text = ServerCore.ReportScanedSum.ToString();
+            if (!ServerCore.ReportSendingCount.ToString().Equals(ServerCore.MainForm.labSending.Text))
+                ServerCore.MainForm.labSending.Text = ServerCore.ReportSendingCount.ToString();
+            if (!ServerCore.ReportSendSuccessSum.ToString().Equals(ServerCore.MainForm.labSendSuccess.Text))
+                ServerCore.MainForm.labSendSuccess.Text = ServerCore.ReportSendSuccessSum.ToString();
+            if (!ServerCore.DownLoadedReceiptReportSum.ToString().Equals(ServerCore.MainForm.labReceiptTotal.Text))
+                ServerCore.MainForm.labReceiptTotal.Text = ServerCore.DownLoadedReceiptReportSum.ToString();
+            if (!ServerCore.WritingReceiptReportsCount.ToString().Equals(ServerCore.MainForm.labReceipting.Text))
+                ServerCore.MainForm.labReceipting.Text = ServerCore.WritingReceiptReportsCount.ToString();
+            if (!ServerCore.ReceiptWritedSum.ToString().Equals(ServerCore.MainForm.labReceiptSuccess.Text))
+                ServerCore.MainForm.labReceiptSuccess.Text = ServerCore.ReceiptWritedSum.ToString();
+            if (!ServerCore.ReportSendFailSum.ToString().Equals(ServerCore.MainForm.labSendFail.Text))
+                ServerCore.MainForm.labSendFail.Text = ServerCore.ReportSendFailSum.ToString();
+            /*if (!ServerCore.sysConfig.GetBottomLinkDescrption().Equals(ServerCore.MainForm.lkl_ButtonLink.Text))
+                ServerCore.MainForm.lkl_ButtonLink.Text = ServerCore.sysConfig.GetBottomLinkDescrption();
+            if (ServerCore.MainForm.lkl_ButtonLink.Text.Equals(ServerCore.MainForm.lkl_ButtonLink.Text) && ServerCore.MainForm.lkl_ButtonLink.Text.Equals(ServerCore.sysConfig.GetBottomLink()))
+                return;
+            ServerCore.MainForm.lkl_ButtonLink.LinkColor = Color.Blue;*/
+        }
+
+        public void RefreshMainLogs()
+        {
+            Hashtable mainLog = ServerCore.MainLogs[ServerCore.MainLogs.Count - 1];
+            string str1 = ServerCore.MainForm.richTBLog.Text.Trim();
+            foreach (DictionaryEntry dictionaryEntry in mainLog)
+            {
+                string str2 = ((string)dictionaryEntry.Key).Trim();
+                if (str1.EndsWith(str2, StringComparison.OrdinalIgnoreCase))
+                    return;
+            }
+            ServerCore.MainForm.richTBLog.Clear();
+            ServerCore.MainLogs.ForEach((Action<Hashtable>)(hashTable =>
+            {
+                EnumLogLevel enumLogLevel = EnumLogLevel.Normal;
+                string text = "";
+                foreach (DictionaryEntry dictionaryEntry in hashTable)
+                {
+                    text = (string)dictionaryEntry.Key;
+                    enumLogLevel = (EnumLogLevel)dictionaryEntry.Value;
+                }
+                Font font = ServerCore.MainForm.richTBLog.Font;
+                switch (enumLogLevel)
+                {
+                    case EnumLogLevel.Normal:
+                        ServerCore.MainForm.richTBLog.SelectionColor = Color.Blue;
+                        break;
+                    case EnumLogLevel.Important:
+                        ServerCore.MainForm.richTBLog.SelectionColor = Color.Green;
+                        break;
+                    case EnumLogLevel.Error:
+                        ServerCore.MainForm.richTBLog.SelectionColor = Color.Red;
+                        break;
+                }
+                ServerCore.MainForm.richTBLog.AppendText(text);
+            }));
+            ServerCore.MainForm.richTBLog.ScrollToCaret();
+        }
+    }
+}

@@ -1,0 +1,310 @@
+﻿using IBM.WMQ.Nmqi;
+using java.security;
+using Microsoft.VisualBasic.Devices;
+using Microsoft.VisualBasic.Logging;
+using Newtonsoft.Json;
+using Newtonsoft.Json.Linq;
+using ZslCustomsAssist.Runtime;
+using ZslCustomsAssist.Service.Rest;
+using ZslCustomsAssist.Utils;
+using ZslCustomsAssist.Utils.Http;
+using ZslCustomsAssist.Utils.Log;
+using static System.Reflection.Metadata.BlobBuilder;
+
+namespace ZslCustomsAssist.Service
+{
+    internal class ApiService
+    {
+        public ApiService() { }
+
+        public Dictionary<string, string> GetAuthHeaders()
+        {
+            //token已失效，重新获取
+            if ((DateTime.Now - ServerCore.clientConfig.ApiToken.DateTime).TotalSeconds > ServerCore.clientConfig.ApiToken.Exprie - 2)
+            {
+                try
+                {
+                    ApiTokenData token = this.Login(ServerCore.clientConfig.ApiAppId, ServerCore.clientConfig.ApiAppSecret, out string msg);
+
+                    ServerCore.clientConfig.ApiToken = token;
+                    IOHelper.InputConfigFile(ServerCore.clientConfig);
+                } catch (Exception ex) {
+                    LogHelper.SaveLog("中商旅辅助系统重新获取Token失败：" + ex.Message, LogLevel.Error);
+                }
+            }
+
+            Dictionary<string, string> headers = new()
+            {
+                { "Authori-zation", "Bearer " + ServerCore.clientConfig.ApiToken.Token },
+            };
+            return headers;
+        }
+
+        public ApiTokenData Login(string appId, string appSecret, out string msg)
+        {
+            msg = string.Empty;
+            string url = ServerCore.ZslApiServicesUrl + "/auth/access_token";
+            ApiLoginRequest apiParams = new ApiLoginRequest()
+            {
+                AppId = appId,
+                AppSecret = appSecret
+            };
+            string postStr = JsonConvert.SerializeObject(apiParams);
+            try
+            {
+                string result = HttpHelper.HttpPost(url, postStr, "UTF-8", "application/json");
+                if (!string.IsNullOrEmpty(result))
+                {
+                    LogHelper.SaveLog("调用中商旅辅助系统登录返回结果：" + result, LogLevel.Info);
+                    ApiResult<ApiTokenData> apiResult = JsonConvert.DeserializeObject<ApiResult<ApiTokenData>>(result);
+                    if (apiResult.Code != 0)
+                    {
+                        LogHelper.SaveLog("中商旅辅助系统获取Token失败：" + apiResult.Msg, LogLevel.Error);
+                        msg = "中商旅辅助系统登录验证失败：" + apiResult.Msg;
+                        return null;
+                    }
+                    return apiResult.Data;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHelper.SaveLog("调用中商旅辅助系统登录接口出错：" + ex.Message, LogLevel.Error);
+                throw new Exception("调用中商旅辅助系统接口(地址" + url + ")执行异常，错误信息:" + ex.Message);
+            }
+            return null;
+        }
+
+        public List<ReportMessage> RequestReport(out string msg)
+        {
+            msg = string.Empty;
+            string url = ServerCore.ZslApiServicesUrl + "/customs/query";
+            string postStr = string.Empty;
+
+            try
+            {
+                string result = HttpHelper.HttpPost(url, postStr, GetAuthHeaders(), "UTF-8", "application/json");
+                if (!string.IsNullOrEmpty(result))
+                {
+                    ApiResult<List<ReportMessage>> apiResult = JsonConvert.DeserializeObject<ApiResult<List<ReportMessage>>>(result);
+                    if (apiResult.Code != 0)
+                    {
+                        LogHelper.SaveLog("调用中商旅辅助系统报文接口异常：" + apiResult.Msg, LogLevel.Error);
+                        msg = "调用中商旅辅助系统报文接口异常：" + apiResult.Msg;
+                        return null;
+                    }
+                    //MessageBox.Show(apiResult.Data+ "");
+                    //Console.WriteLine(apiResult.Data);
+                    return apiResult.Data;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHelper.SaveLog("调用中商旅辅助系统报文接口出错：" + ex.Message, LogLevel.Error);
+                throw new Exception("调用中商旅辅助系统报文接口(地址" + url + ")执行异常，错误信息:" + ex.Message);
+            }
+
+            return null;
+        }
+        public List<ReportMessage> RequestReportJD(out string msg)
+        {
+             msg = string.Empty;
+            string url = "http://116.196.75.185" + "/center/getMsgText";
+            string postStr = string.Empty;
+
+            try
+            {
+                string result = HttpHelper.HttpPost(url, postStr, GetAuthHeaders(), "UTF-8", "application/json");
+                if (!string.IsNullOrEmpty(result))
+                {
+                    ApiResult1<List<ReportMessage>> apiResult = JsonConvert.DeserializeObject<ApiResult1<List<ReportMessage>>>(result);
+                   
+                    if (apiResult.Status != 200)
+                    {
+                        LogHelper.SaveLog("调用京东报文接口异常：" + apiResult.Msg, LogLevel.Error);
+                        msg = "调用京东报文接口异常：" + apiResult.Msg;
+                        return null;
+                    }
+                    //MessageBox.Show(apiResult.Data+ "");
+                    //Console.WriteLine(apiResult.Data);
+                    return apiResult.Data;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHelper.SaveLog("调用中商旅辅助系统报文接口出错：" + ex.Message, LogLevel.Error);
+                throw new Exception("调用中商旅辅助系统报文接口(地址" + url + ")执行异常，错误信息:" + ex.Message);
+            }
+
+            return null;
+        }
+
+        public bool SendReceipt(string fileContent, out string msg)
+        {
+            msg = string.Empty;
+            string url = ServerCore.ZslApiServicesUrl + "/customs/returnReceipt";
+            string postStr = fileContent;
+
+            try
+            {
+                string result = HttpHelper.HttpPost(url, postStr, GetAuthHeaders(), "UTF-8", "application/xml");
+                if (string.IsNullOrEmpty(result))
+                {
+                    LogHelper.SaveLog("调用中商旅辅助系统回执接口返回空值：", LogLevel.Error);
+                    msg = "调用中商旅辅助系统回执接口返回空值";
+                }
+                else {
+                    ApiResult<string> apiResult = JsonConvert.DeserializeObject<ApiResult<string>>(result);
+                    if (apiResult.Code != 0)
+                    {
+                        LogHelper.SaveLog("调用中商旅辅助系统回执接口异常：" + apiResult.Msg, LogLevel.Error);
+                        msg = "调用中商旅辅助系统回执接口异常：" + apiResult.Msg;
+                        return false;
+                    }
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHelper.SaveLog("调用中商旅辅助系统接收回执接口出错：" + ex.Message, LogLevel.Error);
+                throw new Exception("调用中商旅辅助系统接收回执接口(地址" + url + ")执行异常，错误信息:" + ex.Message);
+            }
+
+            return false;
+        }
+        //发送加签后数据给公司
+        public void SendDataCallback(string orderNo, string signStr, string type,string messageStr)
+        {
+
+            string url = ServerCore.ZslApiServicesUrl + "/customs/receiveOrderSign";
+            JObject sendCallback = new JObject();
+
+            sendCallback.Add("orderNo", orderNo);
+            sendCallback.Add("signStr", signStr);
+            sendCallback.Add("type", type);
+            sendCallback.Add("messageStr", messageStr);
+
+
+            string postStr = JsonConvert.SerializeObject(sendCallback);
+            AbstractLog.logger.Info((string)("【" + postStr + "】postStr数据！"+ url));
+            try
+            {
+                string result = HttpHelper.HttpPost(url, postStr, GetAuthHeaders(), "UTF-8", "application/json");
+                if (string.IsNullOrEmpty(result))
+                {
+                    LogHelper.SaveLog("调用中商旅辅助系统回执接口返回空值：", LogLevel.Error);
+                }
+                else
+                {
+                    ApiResult<string> apiResult = JsonConvert.DeserializeObject<ApiResult<string>>(result);
+                    if (apiResult.Code != 0)
+                    {
+                        LogHelper.SaveLog("调用中商旅辅助系统回执接口异常：" + apiResult.Msg, LogLevel.Error);
+                       
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHelper.SaveLog("调用中商旅辅助系统接收回执接口出错：" + ex.Message, LogLevel.Error);
+                AbstractLog.logger.Info((string)("【" + ex.Message + "】调用中商旅辅助系统接收回执接口出错！"));
+                throw new Exception("调用中商旅辅助系统接收回执接口(地址" + url + ")执行异常，错误信息:" + ex.Message);
+            }
+
+        }
+
+        //发送加签后数据给公司
+        public void SendDataCallbackJd(ReportMessage1 report,String str3)
+        {
+
+             string url = "http://116.196.75.185" + "/center/setMsgText";
+            //string url = "http://192.168.0.110:3000" + "/api/test";
+
+            ReportMessage1 obj = report;
+           
+            string postStr = JsonConvert.SerializeObject(obj);
+            AbstractLog.logger.Info((string)("【"+ postStr+ "】postStr数据！"));
+            try
+            {
+                string result = HttpHelper.HttpPost(url, postStr, GetAuthHeaders(), "UTF-8", "application/json");
+                if (string.IsNullOrEmpty(result))
+                {
+                    LogHelper.SaveLog("调用中商旅辅助系统回执接口返回空值：", LogLevel.Error);
+                }
+                else
+                {
+                    ApiResult1<string> apiResult = JsonConvert.DeserializeObject<ApiResult1<string>>(result);
+                    if (apiResult.Status != 200)
+                    {
+                        LogHelper.SaveLog("调用中商旅辅助系统京东回执接口异常：" + apiResult.Msg, LogLevel.Error);
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHelper.SaveLog("调用中商旅辅助系统京东回执接口异常：" + ex.Message, LogLevel.Error);
+                AbstractLog.logger.Info((string)("【" + ex.Message + "】调用中商旅辅助系统京东回执接口异常！"));
+                throw new Exception("调用中商旅辅助系统京东回执接口异常(地址" + url + ")执行异常，错误信息:" + ex.Message);
+            }
+
+
+        }
+
+        public  string MidStrEx(string sourse, string startstr, string endstr)
+          {
+              string result = string.Empty;
+              int startindex, endindex;
+              try
+              {
+                  startindex = sourse.IndexOf(startstr);
+                  if (startindex == -1)
+                      return result;
+                 string tmpstr = sourse.Substring(startindex + startstr.Length);
+                 endindex = tmpstr.IndexOf(endstr);           
+                 if (endindex == -1)
+                     return result;
+                 result = tmpstr.Remove(endindex);
+             }
+             catch (Exception ex)
+             {
+                 
+             }
+             return result;
+         }
+
+public bool UpdateReportStatus(List<ReportStatus> list, out string msg)
+        {
+            msg = string.Empty;
+            string url = ServerCore.ZslApiServicesUrl + "/customs/updStatus";
+            string postStr = JsonConvert.SerializeObject(list);
+
+            try
+            {
+                string result = HttpHelper.HttpPost(url, postStr, GetAuthHeaders(), "UTF-8", "application/json");
+                if (string.IsNullOrEmpty(result))
+                {
+                    LogHelper.SaveLog("调用中商旅辅助系统更新报文接收状态接口返回空值：", LogLevel.Error);
+                    msg = "调用中商旅辅助系统更新报文接收状态接口返回空值";
+                }
+                else
+                {
+                    ApiResult<string> apiResult = JsonConvert.DeserializeObject<ApiResult<string>>(result);
+                    if (apiResult.Code != 0)
+                    {
+                        LogHelper.SaveLog("调用中商旅辅助系统更新报文接收状态接口异常：" + apiResult.Msg, LogLevel.Error);
+                        msg = "调用中商旅辅助系统更新报文接收状态接口异常：" + apiResult.Msg;
+                        return false;
+                    }
+                    return true;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHelper.SaveLog("调用中商旅辅助系统更新接收状态接口出错：" + ex.Message, LogLevel.Error);
+                throw new Exception("调用中商旅辅助系统更新接收状态接口(地址" + url + ")执行异常，错误信息:" + ex.Message);
+            }
+
+            return false;
+        }
+    }
+}

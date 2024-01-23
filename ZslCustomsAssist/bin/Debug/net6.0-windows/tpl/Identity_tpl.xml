@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="UTF-8"?><Identity xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><CardID>${CardID}</CardID><UserName>${UserName}</UserName><EntId>${EntId}</EntId><SendDir>${SendDir}</SendDir><SendTime>${SendTime}</SendTime></Identity>

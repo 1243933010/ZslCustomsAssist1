@@ -1,0 +1,195 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using System.Linq;
+using System.Security.Cryptography.X509Certificates;
+using System.Security.Cryptography.Xml;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using System.Xml;
+using ZslCustomsAssist.Runtime;
+using ZslCustomsAssist.SPSecure;
+using ZslCustomsAssist.SwagentProxy;
+using ZslCustomsAssist.Utils.Log;
+using ZslCustomsAssist.Utils.sm;
+
+namespace ZslCustomsAssist.Utils
+{
+    public class DeclareMessageXmlSign
+    {
+        private static object syncLocker = new object();
+
+        public static string XmlSignTran(string report) => SignXmlUtil.SignXmlDocTran(report);
+
+        public static string XmlSign(string report, string privateKeyStr, string publicKeyStr)
+        {
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.LoadXml(report);
+            string digestValue = ServerCore.userData.szAlgoFlag == 65536UL ? SignXmlUtil.GetDigest(DeclareMessageXmlSign.getC14NTranXml(xmlDocument)) : Sm3Crypto.ToSM3Base64Str(DeclareMessageXmlSign.getC14NTranXml(xmlDocument));
+            AbstractLog.logger.Info((string)("【" + digestValue + "】digestValue值-------！"+ ServerCore.userData.szAlgoFlag));
+            SignXmlUtil.SignXmlDoc(xmlDocument, digestValue);
+            return xmlDocument.OuterXml;
+        }
+
+
+        public static string XmlAbstractSign(string report)
+        {
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.LoadXml(report);
+            SignXmlUtil.SignXmlAbstractDoc(xmlDocument);
+            return xmlDocument.OuterXml;
+        }
+
+        public static string XmlSignSwxa(string report, string certPath, string encType)
+        {
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.LoadXml(report);
+            X509Certificate x509Certificate = new X509Certificate(certPath);
+            string keyAlgorithm = x509Certificate.GetKeyAlgorithm();
+            string str;
+            try
+            {
+                str = !"1.2.840.113549.1.1.1".Equals(keyAlgorithm) ? Convert.ToBase64String(SwxaAPI.HashDigestSM3(Encoding.UTF8.GetBytes(DeclareMessageXmlSign.getC14NTranXml(xmlDocument)))) : Convert.ToBase64String(SwxaAPI.HashDigest(Encoding.UTF8.GetBytes(DeclareMessageXmlSign.getC14NTranXml(xmlDocument))));
+            }
+            catch
+            {
+                throw new Exception("云加签或物理机加签获取摘要失败!");
+            }
+            string xml = (!"1.2.840.113549.1.1.1".Equals(keyAlgorithm) ? XmlHelp.GetXmlContent("./tpl/SM3_SignedInfo_tpl.xml", (Encoding)null) : XmlHelp.GetXmlContent("./tpl/SignedInfo_tpl.xml", (Encoding)null)).Replace("${ds:DigestValue}", str).Replace("${ds:RootElementAttrStr}", SignXmlUtil.EditXmlRootEleAttr(xmlDocument));
+            string signatureValue;
+            try
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.LoadXml(xml);
+                byte[] bytes = Encoding.UTF8.GetBytes(DeclareMessageXmlSign.getC14NTranXml(doc));
+                signatureValue = !"1.2.840.113549.1.1.1".Equals(keyAlgorithm) ? Convert.ToBase64String(SwxaAPI.SignSM3WithSM2(bytes, bytes.Length, ServerCore.privateKeyIndex)) : Convert.ToBase64String(SwxaAPI.SignSha1WithRSA1024(bytes, bytes.Length, ServerCore.privateKeyIndex));
+            }
+            catch
+            {
+                throw new Exception("云加签或物理机加签获取签名值失败!");
+            }
+            string base64String = Convert.ToBase64String(x509Certificate.Export(X509ContentType.Cert));
+            string serialNumberString = x509Certificate.GetSerialNumberString();
+            SignXmlUtil.SignXmlDoc(xmlDocument, str, signatureValue, serialNumberString, base64String, keyAlgorithm);
+            return xmlDocument.OuterXml;
+        }
+
+        public static string XmlSignSwxaTran(string report, string certPath, string encType)
+        {
+            XmlDocument xmlDocument = new XmlDocument();
+            xmlDocument.LoadXml(report);
+            X509Certificate x509Certificate = new X509Certificate(certPath);
+            string keyAlgorithm = x509Certificate.GetKeyAlgorithm();
+            string str;
+            try
+            {
+                str = !"1.2.840.113549.1.1.1".Equals(keyAlgorithm) ? Convert.ToBase64String(SwxaAPI.HashDigestSM3(Encoding.UTF8.GetBytes(DeclareMessageXmlSign.getC14NTranXml(xmlDocument)))) : Convert.ToBase64String(SwxaAPI.HashDigest(Encoding.UTF8.GetBytes(DeclareMessageXmlSign.getC14NTranXml(xmlDocument))));
+            }
+            catch
+            {
+                throw new Exception("云加签或物理机加传输签获取摘要失败!");
+            }
+            string xml = (!"1.2.840.113549.1.1.1".Equals(keyAlgorithm) ? XmlHelp.GetXmlContent("./tpl/SM3_SignedInfo_tpl.xml", (Encoding)null) : XmlHelp.GetXmlContent("./tpl/SignedInfo_tpl.xml", (Encoding)null)).Replace("${ds:DigestValue}", str).Replace("${ds:RootElementAttrStr}", SignXmlUtil.EditXmlRootEleAttr(xmlDocument));
+            string signatureValue;
+            try
+            {
+                XmlDocument doc = new XmlDocument();
+                doc.LoadXml(xml);
+                byte[] bytes = Encoding.UTF8.GetBytes(DeclareMessageXmlSign.getC14NTranXml(doc));
+                signatureValue = !"1.2.840.113549.1.1.1".Equals(keyAlgorithm) ? Convert.ToBase64String(SwxaAPI.SignSM3WithSM2(bytes, bytes.Length, ServerCore.privateKeyIndex)) : Convert.ToBase64String(SwxaAPI.SignSha1WithRSA1024(bytes, bytes.Length, ServerCore.privateKeyIndex));
+            }
+            catch
+            {
+                throw new Exception("云加签或物理机加传输签获取签名值失败!");
+            }
+            string serialNumberString = x509Certificate.GetSerialNumberString();
+            SignXmlUtil.SignXmlDocTran(xmlDocument, str, signatureValue, serialNumberString, keyAlgorithm);
+            return xmlDocument.OuterXml;
+        }
+
+        public static string getC14NTranXml(XmlDocument doc)
+        {
+            XmlDsigC14NTransform dsigC14Ntransform = new XmlDsigC14NTransform();
+            dsigC14Ntransform.LoadInput((object)doc);
+            MemoryStream output = (MemoryStream)dsigC14Ntransform.GetOutput(typeof(Stream));
+            StreamReader streamReader = new StreamReader((Stream)output);
+            string end = streamReader.ReadToEnd();
+            output.Dispose();
+            streamReader.Dispose();
+            return end;
+        }
+
+        public static string GetSignatureValue(
+          string report,
+          string privateKeyStr,
+          string publicKeyStr)
+        {
+            lock (DeclareMessageXmlSign.syncLocker)
+            {
+                try
+                {
+                    XmlDocument xmlDocument = new XmlDocument();
+                    xmlDocument.LoadXml(report);
+                    XmlDocument xmlDoc = new XmlDocument();
+                    xmlDoc.LoadXml(report);
+                    string digestValue = SignXmlUtil.GetDigestValue(XmlHelp.ToXmlDocument(XmlHelp.SignXmlDoc(privateKeyStr, xmlDoc, "")));
+                    string namespaceUri = xmlDocument.DocumentElement.NamespaceURI;
+                    return SPSecureAPI.SpcSignData(XmlHelp.GetXmlContent("./tpl/SignedInfo_tpl.xml", (Encoding)null).Replace("${ds:DigestValue}", digestValue).Replace("${NamespaceURI}", namespaceUri));
+                }
+                catch (Exception ex)
+                {
+                    throw new Exception("XML加签异常：" + ex.StackTrace);
+                }
+            }
+        }
+
+        public static bool IsSignatured(XmlNodeList xmlNodeList)
+        {
+            Regex regex = new Regex("(\\S+:)?Signature\\s*");
+            foreach (XmlNode xmlNode in xmlNodeList)
+            {
+                if (regex.IsMatch(xmlNode.Name) || xmlNode.HasChildNodes && DeclareMessageXmlSign.IsSignatured(xmlNode.ChildNodes))
+                    return true;
+            }
+            return false;
+        }
+
+        public static XmlNode getSignatured(XmlNodeList xmlNodeList)
+        {
+            Regex regex = new Regex("(\\S+:)?Signature\\s*");
+            foreach (XmlNode xmlNode in xmlNodeList)
+            {
+                if (regex.IsMatch(xmlNode.Name))
+                    return xmlNode;
+            }
+            return (XmlNode)null;
+        }
+
+        public static void GetXmlInnerText(
+          XmlNodeList xmlNodeList,
+          List<string> xmlNames,
+          Hashtable hashtable)
+        {
+            foreach (XmlNode xmlNode1 in xmlNodeList)
+            {
+                XmlNode xmlNode = xmlNode1;
+                if (!xmlNames.Any<string>())
+                    break;
+                if (xmlNames.Any<string>((Func<string, bool>)(name => new Regex(name).IsMatch(xmlNode.Name))))
+                {
+                    string str = string.IsNullOrEmpty(xmlNode.InnerText) ? "" : xmlNode.InnerText;
+                    if (hashtable[(object)xmlNode.Name] != null)
+                        ((List<string>)hashtable[(object)xmlNode.Name]).Add(str);
+                    else
+                        hashtable.Add((object)xmlNode.Name, (object)new List<string>()
+            {
+              str
+            });
+                }
+                else if (xmlNode.HasChildNodes)
+                    DeclareMessageXmlSign.GetXmlInnerText(xmlNode.ChildNodes, xmlNames, hashtable);
+            }
+        }
+    }
+}

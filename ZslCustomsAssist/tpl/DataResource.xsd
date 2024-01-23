@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 被2012 () 使用XMLSpy v编辑的 (http://www.altova.com) by -->
+<!-- 编辑使用 XMLSpy v2006 U (http://www.altova.com) 由 any (any) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="SZCPORTDRQR">
+		<xs:annotation>
+			<xs:documentation>数据资源查询结果</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Head">
+					<xs:annotation>
+						<xs:documentation>报文头</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MessageID">
+								<xs:annotation>
+									<xs:documentation>报文编号</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="60"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="MessageType">
+								<xs:annotation>
+									<xs:documentation>报文类型:REC0001</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="15"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Sender">
+								<xs:annotation>
+									<xs:documentation>报文发送者标识</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="30"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Receiver">
+								<xs:annotation>
+									<xs:documentation>报文接收人标识</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="30"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="SendTime">
+								<xs:annotation>
+									<xs:documentation>发送时间,格式YYYYMMDDhhmmss</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="14"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Version">
+								<xs:annotation>
+									<xs:documentation>版本 此版为1.0</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="10"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Body">
+					<xs:annotation>
+						<xs:documentation>报文体</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Conditions">
+								<xs:annotation>
+									<xs:documentation>查询条件列表</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:sequence minOccurs="0" maxOccurs="unbounded">
+											<xs:element name="Condition">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="Name" type="xs:string"/>
+														<xs:element name="Value" type="xs:string"/>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="Results">
+								<xs:annotation>
+									<xs:documentation>查询结果列表</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:sequence minOccurs="0" maxOccurs="unbounded">
+											<xs:element name="Result">
+												<xs:annotation>
+													<xs:documentation>查询结果</xs:documentation>
+												</xs:annotation>
+												<xs:complexType>
+													<xs:sequence maxOccurs="unbounded">
+														<xs:element name="Column">
+															<xs:complexType>
+																<xs:sequence>
+																	<xs:element name="Name"/>
+																	<xs:element name="Value"/>
+																</xs:sequence>
+															</xs:complexType>
+														</xs:element>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="SZCPORTDRQC">
+		<xs:annotation>
+			<xs:documentation>数据资源查询条件</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="Head">
+					<xs:annotation>
+						<xs:documentation>报文头</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="MessageID">
+								<xs:annotation>
+									<xs:documentation>报文编号</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="60"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="MessageType">
+								<xs:annotation>
+									<xs:documentation>报文类型:REC0001</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="15"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Sender">
+								<xs:annotation>
+									<xs:documentation>报文发送者标识</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="30"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Receiver">
+								<xs:annotation>
+									<xs:documentation>报文接收人标识</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="30"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="SendTime">
+								<xs:annotation>
+									<xs:documentation>发送时间,格式YYYYMMDDhhmmss</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:length value="14"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+							<xs:element name="Version">
+								<xs:annotation>
+									<xs:documentation>版本 此版为1.0</xs:documentation>
+								</xs:annotation>
+								<xs:simpleType>
+									<xs:restriction base="xs:string">
+										<xs:maxLength value="10"/>
+										<xs:minLength value="1"/>
+									</xs:restriction>
+								</xs:simpleType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="Body">
+					<xs:annotation>
+						<xs:documentation>报文体</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="Conditions">
+								<xs:annotation>
+									<xs:documentation>查询条件列表</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:sequence minOccurs="0" maxOccurs="unbounded">
+											<xs:element name="Condition">
+												<xs:complexType>
+													<xs:sequence>
+														<xs:element name="Name" type="xs:string"/>
+														<xs:element name="Value" type="xs:string"/>
+													</xs:sequence>
+												</xs:complexType>
+											</xs:element>
+										</xs:sequence>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

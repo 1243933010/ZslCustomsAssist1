@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--用XMLSpy v2012产生的 XML文件(http://www.altova.com)-->
+<SzcportTransfer xmlns:n1="http://www.altova.com/samplexml/other-namespace" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Head>
+		<MessageID>${Data:MessageId}</MessageID>
+		<MessageType>${Data:MessageType}</MessageType>
+		<Sender>${Data:Sender}</Sender>
+		<Receivers>
+			<Receiver>${Data:Receiver}</Receiver>
+		</Receivers>
+		<SendTime>${Data:SendTime}</SendTime>
+		<Version>1</Version>
+		<ZipFlag>2</ZipFlag>
+    <TransferType>DxpMsg</TransferType>
+	</Head>
+	<Data>${Data:EncryptData}</Data>
+</SzcportTransfer>

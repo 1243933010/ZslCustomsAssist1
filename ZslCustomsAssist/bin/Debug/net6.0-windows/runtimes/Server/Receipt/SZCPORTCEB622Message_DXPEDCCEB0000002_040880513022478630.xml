@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CEB622Message xmlns="http://www.chinaport.gov.cn/ceb" version="1.0" guid="4B0D94B1-42A2-C399-E805-7CB8637AEFA6">
+    <InventoryReturn>
+        <guid>4B0D94B1-42A2-C399-E805-7CB8637AEFA6</guid>
+        <customsCode>5352</customsCode>
+        <ebpCode>31149679BZ</ebpCode>
+        <ebcCode>4403961X7S</ebcCode>
+        <agentCode>445366014U</agentCode>
+        <returnStatus>-621001</returnStatus>
+        <returnTime>20231009103335035</returnTime>
+        <returnInfo>清单[电商企业编码：4403961X7S,订单编号：276618161072]报文校验失败:系统异常:null</returnInfo>
+    </InventoryReturn>
+</CEB622Message>

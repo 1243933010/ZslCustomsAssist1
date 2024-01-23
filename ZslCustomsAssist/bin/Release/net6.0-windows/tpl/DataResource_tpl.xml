@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--用XMLSpy v2012产生的 XML文件(http://www.altova.com)-->
+<SZCPORTDRQC xsi:noNamespaceSchemaLocation="DataResource.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<Head>
+		<MessageID>${MessageID}</MessageID>
+		<MessageType>${MessageType}</MessageType>
+		<Sender>${Sender}</Sender>
+		<Receiver>SZCPORT</Receiver>
+		<SendTime>${SendTime}</SendTime>
+		<Version>1.0</Version>
+	</Head>
+	<Body>
+		<Conditions>
+      ${Conditions}
+    </Conditions>
+	</Body>
+</SZCPORTDRQC>

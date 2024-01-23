@@ -1,0 +1,393 @@
+using System.Diagnostics;
+using System.Security.Cryptography;
+using System.Security.Policy;
+using ZslCustomsAssist.Jobs;
+using ZslCustomsAssist.Server.Enum;
+using ZslCustomsAssist.Runtime;
+using ZslCustomsAssist.SPSecure;
+using ZslCustomsAssist.User;
+using ZslCustomsAssist.Utils;
+using ZslCustomsAssist.Utils.Http;
+using ZslCustomsAssist.Utils.Log;
+using Microsoft.VisualBasic.Logging;
+using static Org.BouncyCastle.Math.EC.ECCurve;
+using ZslCustomsAssist.Runtime.Config;
+
+namespace ZslCustomsAssist
+{
+    public partial class FormMain : AbstractFormLog
+    {
+        private static object syncLocker = new object();
+        //public Thread checkUpdateVersionThread = new Thread(new ThreadStart(new CheckUpdateVersionJob().OnDoJob));
+        //public Thread sendJDReportRequestJobThread = new Thread(new ThreadStart(new SendReportRequestJobJD().OnDoJob));
+
+        public Thread sendReportRequestJobThread = new Thread(new ThreadStart(new SendReportRequestJob().OnDoJob));
+        public Thread sendAbstractRequestJobThread = new Thread(new ThreadStart(new SendAbstractRequestJob().OnDoJob));
+
+        public Thread sendReportScanJobThread = new Thread(new ThreadStart(new SendReportScanJob().OnDoJob));
+        public Thread reportSendThread = new Thread(new ThreadStart(new ReportSendJob().OnDoJob));
+        public Thread reportQueryThread = new Thread(new ThreadStart(new ReportQueryJob().OnDoJob));
+        public Thread reportReceiptDownloadThread = new Thread(new ThreadStart(new ReportReceiptDownloadJob().OnDoJob));
+        public Thread reportReceiptWritingThread = new Thread(new ThreadStart(new ReportReceiptWritingJob().OnDoJob));
+        public Thread reportReceiptScanThread = new Thread(new ThreadStart(new ReportReceiptScanJob().OnDoJob));
+        public Thread checkCardStateThread = new Thread(new ThreadStart(new CheckCardStateJob().OnDoJob));
+
+        public string privateKeyStr;
+        public string publicKeyStr;
+
+        public FormMain()
+        {
+            InitializeComponent();
+            RSACryptoServiceProvider cryptoServiceProvider = new RSACryptoServiceProvider(1024, new CspParameters()
+            {
+                Flags = CspProviderFlags.UseMachineKeyStore
+            });
+            
+            this.privateKeyStr = cryptoServiceProvider.ToXmlString(true);
+            this.publicKeyStr = cryptoServiceProvider.ToXmlString(false);
+            Control.CheckForIllegalCrossThreadCalls = false;
+        }
+
+        private void btnSend_Click(object sender, EventArgs e)
+        {
+            /*RSACryptoServiceProvider cryptoServiceProvider = new RSACryptoServiceProvider(1024, new CspParameters()
+            {
+                Flags = CspProviderFlags.UseMachineKeyStore
+            });
+            this.privateKeyStr = cryptoServiceProvider.ToXmlString(true);
+            this.publicKeyStr = cryptoServiceProvider.ToXmlString(false);
+
+            //txtMsg.Text = this.privateKeyStr + Environment.NewLine + Environment.NewLine + "---------------------------------------" + Environment.NewLine + Environment.NewLine + this.publicKeyStr;
+            string url = "https://szdtsp.szcport.cn:8443/szcport/app/json/loadClientSysConfig.action";
+            string str = HttpHelper.HttpPostForType2(url, "");
+            txtMsg.Text = str;*/
+
+            ServerCore.SendForm.Show();
+        }
+
+        private void btnSign_Click(object sender, EventArgs e)
+        {
+            ServerCore.SignForm.Show();
+        }
+
+        private void StripMenuItem_Show_Click(object sender, EventArgs e)
+        {
+            if (ServerCore.isLogin)
+            {
+                this.Show();
+            }
+        }
+
+        private void Exit()
+        {
+            if (MessageBox.Show("点击退出后客户端将无法正常使用，请确认？", "确认", MessageBoxButtons.OKCancel, MessageBoxIcon.Question) == DialogResult.OK)
+            {
+                ServerCore.IsExitThread = true;
+                this.Close();
+            }
+        }
+
+        private void StripMenuItem_Exit_Click(object sender, EventArgs e) => Exit();
+
+        private void btnExit_Click(object sender, EventArgs e) => Exit();
+
+        private void FormMain_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            if (ServerCore.IsExitThread)
+            {
+                e.Cancel = false;
+            }
+            else {
+                this.Visible = false;
+                e.Cancel = true;
+            }
+        }
+
+        private void InitSystem()
+        {
+            //AbstractFormLog.logger.Info((object)"测试测试");
+            //string test11 = "测试测试";
+            //int num1 = (int)MessageBox.Show(test11+ "！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+            if (ServerCore.IsBindingIp && !ResourceSetting.GetValue("RestrictedIP").Contains(SystemInfoHelper.GetExternalNetworkIpAddress()))
+            {
+                int num = (int)MessageBox.Show("IP地址异常，客户端即将退出！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                new ExitProgramJob().QuitApplication();
+            }
+            else
+            {
+                ServerCore.MainForm = this;
+                ServerCore.clientConfig = ClientConfig.LoadConfig();
+                if (string.IsNullOrWhiteSpace(ServerCore.CloudServicesUrl))
+                {
+                    int num = (int)MessageBox.Show("未设置云服务地址，客户端启动异常", "提示", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                    new ExitProgramJob().QuitApplication();
+                   // string a = "1";
+                   // MessageBox.Show(a, "提示", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                }
+                else
+                {
+                    if (ServerCore.IsWithOutCard)
+                    {
+                        AbstractFormLog.logger.Info((object)"当前为无卡模式");
+                    }
+                    else
+                    {
+                        try
+                        {
+                            SPSecureAPI.CopySignDll();
+                        }
+                        catch (UnauthorizedAccessException ex)
+                        {
+                            AbstractFormLog.logger.Error((object)"客户端加签控件初始化异常!", (Exception)ex);
+                            throw new Exception("客户端加签控件初始化异常，请确认无以下任何行为：\n（1）客户端应用重复打开；\n（2）客户端内置应用被杀毒软件拦截\n（3）客户端应用不完整（缺失相应控件）");
+                        }
+                        catch (Exception ex)
+                        {
+                            throw new Exception("加签控件异常，建议重装客户端后再试！:" + ex.Message);
+                        }
+                        try
+                        {
+                            bool isSuccessOpenDevice = false;
+                            new Thread((ThreadStart)(() =>
+                            {
+                                long num1 = 60000;
+                                Stopwatch stopwatch = new Stopwatch();
+                                stopwatch.Start();
+                                do
+                                {
+                                    Thread.Sleep(5000);
+                                }
+                                while (stopwatch.ElapsedMilliseconds < num1 && !isSuccessOpenDevice);
+                                if (isSuccessOpenDevice)
+                                    return;
+                                int num2 = (int)MessageBox.Show("读卡设备启动异常，请重新拔插 读卡器USB接口 和 报关卡 后重新启动程序!", "打开设备失败", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                                ServerCore.IsExitThread = true;
+                                new ExitProgramJob().QuitApplication();
+                            })).Start();
+                            SPSecureAPI.OpenDevice();
+                            isSuccessOpenDevice = true;
+                            ServerCore.userData.szCardID = SPSecureAPI.SpcGetCardID();
+
+                        }
+                        catch (Exception ex)
+                        {
+                            AbstractFormLog.logger.Error((object)ex);
+                            int num = (int)MessageBox.Show("打开设备失败,原因\r\n" + ex.Message, "打开设备失败", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                            new ExitProgramJob().QuitApplication();
+                            return;
+                        }
+                    }
+                    FileHelper.InitSaveReportDirectory(ServerCore.clientConfig.ReportSendDir, "报文发送目录");
+                    FileHelper.InitSaveReportDirectory(ServerCore.clientConfig.UnReportSendDir, "待发送目录");
+                    FileHelper.InitSaveReportDirectory(ServerCore.clientConfig.ReportSendFailDir, "报文发送失败目录");
+                    FileHelper.InitSaveReportDirectory(ServerCore.clientConfig.ReceiptReceiveDir, "回执接收目录");
+                }
+            }
+        }
+
+        private void StartThreads()
+        {
+            ServerCore.scanAllowSendFileStart = new List<string>((IEnumerable<string>)ServerCore.sysConfig.GetClientScanAllowSendFileStart().Split(','));
+            ServerCore.scanAllowSendFileEnd = new List<string>((IEnumerable<string>)ServerCore.sysConfig.GetClientScanAllowSendFileEnd().Split(','));
+            FormMain.LoadLocalReport();
+
+            this.sendAbstractRequestJobThread.Start();
+            ServerCore.AddMainLog("请求摘要报文服务：start...");
+
+            this.sendReportRequestJobThread.Start();
+            ServerCore.AddMainLog("请求报文服务：start...");
+            AbstractFormLog.logger.Info((object)"开启请求报文服务！");
+            this.sendReportScanJobThread.Start();
+            //ServerCore.AddMainLog("开启报文发送目录扫描服务！");
+            //AbstractFormLog.logger.Info((object)"开启报文发送目录扫描服务！");
+            this.reportSendThread.Start();
+            ServerCore.AddMainLog("报文发送服务：start...");
+            AbstractFormLog.logger.Info((object)"开启报文发送服务！");
+            //this.reportQueryThread.Start();
+            //ServerCore.AddMainLog("开启查询请求报文发送服务！");
+            //AbstractFormLog.logger.Info((object)"开启查询请求报文发送服务！");
+            this.reportReceiptDownloadThread.Start();
+            ServerCore.AddMainLog("回执接收服务：start...");
+            AbstractFormLog.logger.Info((object)"开启回执接收任务！");
+            this.reportReceiptWritingThread.Start();
+            //ServerCore.AddMainLog("开启回执推送任务！");
+            //AbstractFormLog.logger.Info((object)"开启回执推送任务！");
+
+            this.reportReceiptScanThread.Start();
+
+            new Thread(new ThreadStart(new RefreshMainFormInformationJob().OnDoJob)).Start();
+            //ServerCore.AddMainLog("开启页面数据刷新任务！");
+            //AbstractFormLog.logger.Info((object)"开启页面数据刷新任务！");
+            new Thread(new ThreadStart(new SynchronousConfigurationJob().OnDoJob)).Start();
+            //ServerCore.AddMainLog("开启企业配置同步任务！");
+            //AbstractFormLog.logger.Info((object)"开启企业配置同步任务！");
+
+            this.checkCardStateThread.Start();
+        }
+
+        public static void LoadLocalReport()
+        {
+            if (!Directory.Exists(ServerCore.clientConfig.UnReportSendDir))
+                Directory.CreateDirectory(ServerCore.clientConfig.UnReportSendDir);
+            if (!Directory.Exists(ServerCore.clientConfig.ReportSendFailDir))
+                Directory.CreateDirectory(ServerCore.clientConfig.ReportSendFailDir);
+            FileInfo[] files = new DirectoryInfo(ServerCore.clientConfig.UnReportSendDir).GetFiles("*.*", SearchOption.AllDirectories);
+            //AbstractFormLog.logger.Info((object)"对遗留报文进行发送...");
+            //ServerCore.AddMainLog("对遗留报文进行发送...");
+            for (int index = 0; index < files.Length && !ServerCore.IsExitThread; ++index)
+            {
+                ReportSendJob.AppendToUnSendReportList(files[index].FullName);
+                ServerCore.AddReportScanedSum(isRefreshNum: false);
+            }
+        }
+
+
+        private void FormMain_Load(object sender, EventArgs e)
+        {
+            try
+            {
+                //Console.WriteLine("111");
+               // MessageBox.Show("111");
+                this.InitSystem();
+            }
+            catch (Exception ex)
+            {
+                AbstractFormLog.logger.Error((object)"客户端初始化异常->", ex);
+                int num = (int)MessageBox.Show("客户端初始化异常！" + ex.Message, "提示", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                new ExitProgramJob().QuitApplication();
+                return;
+            }
+            if (!new GetSystemConfigJob().GetSystemConfig())
+            {
+                int num = (int)MessageBox.Show("连接云服务异常！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                new ExitProgramJob().QuitApplication();
+            }
+            else
+            {
+                //this.checkUpdateVersionThread.Start();
+                //ServerCore.AddMainLog("开启更新监控程序！");
+                //AbstractFormLog.logger.Info((object)"开启更新监控程序！");
+                //new Thread(new ThreadStart(new SendClientStateJob().OnDoJob)).Start();
+                //ServerCore.AddMainLog("开启状态上传任务！");
+                //AbstractFormLog.logger.Info((object)"开启状态上传任务！");
+
+                new Thread(new ThreadStart(new ClearTimeOutFileJob().OnDoJob)).Start();
+                //ServerCore.AddMainLog("开启定期清理文件任务！");
+                //AbstractFormLog.logger.Info((object)"开启定期清理文件任务！");
+                new Thread(new ThreadStart(new GetSystemConfigJob().OnDoJob)).Start();
+                //ServerCore.AddMainLog("开启系统配置同步任务！");
+                //AbstractFormLog.logger.Info((object)"开启系统配置同步任务！");
+                new Thread(new ThreadStart(new ExitProgramJob().OnDoJob)).Start();
+                //ServerCore.AddMainLog("开启检测关闭线程！");
+                //AbstractFormLog.logger.Info((object)"开启检测关闭线程！");
+
+                //未登录
+                if (string.IsNullOrWhiteSpace(ServerCore.clientConfig.TypistPassword) || ServerCore.clientConfig.ApiToken == null
+                    || string.IsNullOrEmpty(ServerCore.clientConfig.ApiAppId) || string.IsNullOrEmpty(ServerCore.clientConfig.ApiAppSecret))
+                {
+                    ServerCore.isLogin = false;
+                    //AbstractFormLog.logger.Info((object)"打开登录窗口");
+                    if (ServerCore.Login == null)
+                        ServerCore.Login = new FormLogin();
+                    int num = (int)ServerCore.Login.ShowDialog();
+                    ServerCore.Login.Activate();
+                }
+                else if (!ServerCore.IsWithOutCard)
+                {
+                    string text = SPSecureAPI.SpcVerifyPIN(ServerCore.clientConfig.TypistPassword);
+                    if (!string.IsNullOrWhiteSpace(text))
+                    {
+                        int num1 = (int)MessageBox.Show(text, "提示", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                        int num2 = (int)ServerCore.Login.ShowDialog();
+                        return;
+                    }
+                    
+                    UserData.GetCardMsg();
+                }
+                string str = ServerCore.clientConfig.IcNo;
+                if (str.Length == 0)
+                    str = ServerCore.userData.szCardID;
+                if (ServerCore.IsBindingCard && str != ResourceSetting.GetValue("RestrictedCardNo"))
+                {
+                    int num = (int)MessageBox.Show("卡号异常，客户端即将退出！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                    new ExitProgramJob().QuitApplication();
+                }
+                else
+                {
+                    ServerCore.isLogin = true;
+                    try
+                    {
+                        while (!new SynchronousConfigurationJob().SynchronousConfigurationStart())
+                        {
+                            ServerCore.isLogin = false;
+                            //AbstractFormLog.logger.Info((object)"打开登录窗口");
+                            if (ServerCore.Login == null)
+                                ServerCore.Login = new FormLogin();
+                            int num = (int)ServerCore.Login.ShowDialog();
+                        }
+                    }
+                    catch (Exception ex)
+                    {
+                        int num = (int)MessageBox.Show("同步企业配置失败，请重启后再试！", "提示", MessageBoxButtons.OK, MessageBoxIcon.Hand);
+                        AbstractFormLog.logger.Error((object)"同步企业配置失败", ex);
+                        new ExitProgramJob().QuitApplication();
+                        return;
+                    }
+                    //this.lblAppVesion.Text = "检测中";
+                    AbstractFormLog.logger.Info((object)"客户端启动中...");
+                    //this.lblAppVesion.Text = "V " + ServerCore.GetVersion();
+                    //AbstractFormLog.logger.Info((object)("运行环境为：" + ServerCore.RunningModelChineseName()));
+                    //this.Text = this.Text + "【" + ServerCore.RunningModelChineseName() + "】";
+                    //AbstractFormLog.logger.Info((object)("安装路径为：" + ServerCore.SysFileDirectory));
+                    this.StartThreads();
+                    this.SetWndState(true);
+                }
+            }
+
+            if (ServerCore.SendForm == null)
+                ServerCore.SendForm = new FormSend();
+            if (ServerCore.SignForm == null)
+                ServerCore.SignForm = new FormSign();
+        }
+
+        public void SetWndState(bool isSuccess, string exMsg = "")
+        {
+            string str = "正常运行中";
+            if (!isSuccess)
+                exMsg = string.IsNullOrWhiteSpace(exMsg) ? "运行异常" : exMsg;
+            if (isSuccess)
+            {
+                //this.labMsg.ForeColor = System.Drawing.Color.Green;
+            }
+            else
+            {
+                //this.labMsg.ForeColor = System.Drawing.Color.Red;
+                str = exMsg;
+            }
+            this.labMsg.Text = str;
+        }
+
+        private void notifyIcon_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                if (ServerCore.isLogin)
+                {
+                    if (this.Visible)
+                    {
+                        this.Hide();
+                    }
+                    else
+                    {
+                        this.Show();
+                    }
+                }
+            }
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
+        }
+    }
+}

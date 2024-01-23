@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CEB312Message xmlns="http://www.chinaport.gov.cn/ceb" version="1.0" guid="1FF0B9F5-158A-489E-A869-ABE9D30E5395">
+    <OrderReturn>
+        <guid>5FE83DF3-48DA-4A4C-9269-B2A21B4CFEE6</guid>
+        <ebpCode>3105961682</ebpCode>
+        <ebcCode>4403961X7S</ebcCode>
+        <orderNo>pc202302240006</orderNo>
+        <returnStatus>-301014</returnStatus>
+        <returnTime>20230310161510063</returnTime>
+        <returnInfo>订单报文处理失败，接收报文为旧报文数据，不做处理;</returnInfo>
+    </OrderReturn>
+</CEB312Message>

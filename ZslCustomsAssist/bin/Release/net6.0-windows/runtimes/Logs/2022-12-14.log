@@ -1,0 +1,252 @@
+﻿程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2022-12-14 10:22:56,366--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2022-12-14 10:22:56,380--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.FormMain-InitSystem][162][ERROR][1] 2022-12-14 10:22:57,055--System.Exception: [读卡器底层库]打开读卡器失败:错误码=50040
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 368
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.OpenDevice() in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 96
+   at ZslCustomsAssist.FormMain.InitSystem() in D:\file\ZslCustomsAssist\ZslCustomsAssist\FormMain.cs:line 156
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][20] 2022-12-14 10:23:03,796--E-PortMsg：关闭加密设备成功！
+[ZslCustomsAssist.Jobs.ExitProgramJob+<>c__DisplayClass2_0-<QuitApplication>b__0][61][INFO][20] 2022-12-14 10:23:03,844--本次启动:
+发送报文数	0
+发送失败报文数	0
+接收回执数	0
+写入回执数	0
+程序退出！
+程序关闭!!!!!!
+程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2022-12-14 10:23:22,730--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2022-12-14 10:23:22,743--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 10:23:23,378--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 10:23:23,825--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.Utils.FileHelper-InitSaveReportDirectory][285][INFO][1] 2022-12-14 10:23:23,826--报文发送目录D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Release\net6.0-windows\runtimes\Server\Send创建成功！
+[ZslCustomsAssist.Utils.FileHelper-InitSaveReportDirectory][285][INFO][1] 2022-12-14 10:23:23,827--待发送目录D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Release\net6.0-windows\runtimes\Server\Sending创建成功！
+[ZslCustomsAssist.Utils.FileHelper-InitSaveReportDirectory][285][INFO][1] 2022-12-14 10:23:23,827--报文发送失败目录D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Release\net6.0-windows\runtimes\Server\SendFail创建成功！
+[ZslCustomsAssist.Utils.FileHelper-InitSaveReportDirectory][285][INFO][1] 2022-12-14 10:23:23,828--回执接收目录D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Release\net6.0-windows\runtimes\Server\Receipt创建成功！
+[ZslCustomsAssist.Jobs.ClearTimeOutFileJob-ClearFile][55][INFO][6] 2022-12-14 10:23:24,075--D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Release\net6.0-windows\Log不存在，取消清除！
+[ZslCustomsAssist.FormLogin-FormLogin_Load][127][INFO][1] 2022-12-14 10:23:24,137--当前IC卡号：2100060054480
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcVerifyPIN][117][ERROR][1] 2022-12-14 10:24:07,342--System.Exception: [智能卡应用模块]卡片无效:错误码=51590
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 368
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcVerifyPIN(String password) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 113
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcVerifyPIN][117][ERROR][1] 2022-12-14 10:24:09,770--System.Exception: [智能卡应用模块]卡片无效:错误码=51590
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 368
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcVerifyPIN(String password) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 113
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][3] 2022-12-14 10:24:13,809--E-PortMsg：关闭加密设备成功！
+[ZslCustomsAssist.Jobs.ExitProgramJob+<>c__DisplayClass2_0-<QuitApplication>b__0][61][INFO][3] 2022-12-14 10:24:13,816--本次启动:
+发送报文数	0
+发送失败报文数	0
+接收回执数	0
+写入回执数	0
+程序退出！
+程序关闭!!!!!!
+程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2022-12-14 15:26:16,535--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2022-12-14 15:26:16,550--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:26:17,401--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:26:17,861--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.Jobs.ClearTimeOutFileJob-ClearFile][55][INFO][6] 2022-12-14 15:26:18,050--D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Release\net6.0-windows\Log不存在，取消清除！
+[ZslCustomsAssist.FormLogin-FormLogin_Load][127][INFO][1] 2022-12-14 15:26:18,113--当前IC卡号：2100060054480
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][71][INFO][1] 2022-12-14 15:27:06,160--本次同步配置共耗时：0.168s
+[ZslCustomsAssist.FormMain-FormMain_Load][318][INFO][1] 2022-12-14 15:27:06,176--客户端启动中...
+[ZslCustomsAssist.FormMain-StartThreads][183][INFO][1] 2022-12-14 15:27:06,181--开启请求报文服务！
+[ZslCustomsAssist.FormMain-StartThreads][189][INFO][1] 2022-12-14 15:27:06,181--开启报文发送服务！
+[ZslCustomsAssist.FormMain-StartThreads][195][INFO][1] 2022-12-14 15:27:06,182--开启回执接收任务！
+[ZslCustomsAssist.Jobs.RefreshMainFormInformationJob-RefreshLog][48][ERROR][27] 2022-12-14 15:27:06,187--刷新界面日志线程异常！
+System.ObjectDisposedException: Cannot access a disposed object.
+Object name: 'RichTextBox'.
+   at System.Windows.Forms.Control.CreateHandle()
+   at System.Windows.Forms.TextBoxBase.CreateHandle()
+   at System.Windows.Forms.RichTextBox.set_SelectionColor(Color value)
+   at ZslCustomsAssist.Jobs.RefreshMainFormInformationJob.<>c.<RefreshMainLogs>b__4_0(Hashtable hashTable) in D:\file\ZslCustomsAssist\ZslCustomsAssist\Jobs\RefreshMainFormInformationJob.cs:line 102
+   at System.Collections.Generic.List`1.ForEach(Action`1 action)
+   at ZslCustomsAssist.Jobs.RefreshMainFormInformationJob.RefreshMainLogs() in D:\file\ZslCustomsAssist\ZslCustomsAssist\Jobs\RefreshMainFormInformationJob.cs:line 93
+   at ZslCustomsAssist.Jobs.RefreshMainFormInformationJob.RefreshLog() in D:\file\ZslCustomsAssist\ZslCustomsAssist\Jobs\RefreshMainFormInformationJob.cs:line 46
+程序关闭!!!!!!
+程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2022-12-14 15:27:12,156--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2022-12-14 15:27:12,170--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:27:12,779--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:27:13,253--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.Jobs.ClearTimeOutFileJob-ClearFile][55][INFO][6] 2022-12-14 15:27:13,591--D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Release\net6.0-windows\Log不存在，取消清除！
+[ZslCustomsAssist.FormLogin-FormLogin_Load][127][INFO][1] 2022-12-14 15:27:13,675--当前IC卡号：2100060054480
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:27:41,437--E-PortMsg：获取卡内证书算法标识成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:27:41,438--E-PortMsg：获取证书号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:27:41,446--E-PortMsg：获取申请者名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:27:41,446--E-PortMsg：获取单位代码成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:27:41,447--E-PortMsg：获取单位名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:27:41,447--E-PortMsg：获取单位类别成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2022-12-14 15:27:41,894--E-PortMsg：获取卡签名证书成功！
+[ZslCustomsAssist.Utils.Log.LogHelper-SaveLog][113][INFO][1] 2022-12-14 15:27:41,960--调用中商旅辅助系统登录返回结果：{"code":0,"msg":"success","data":{"token":"9f2c61e71dd0c1defb33353f56196686","validity":7200,"appid":"4927415bf99e37ea60524fc9aa6e9f28"}}
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][71][INFO][1] 2022-12-14 15:27:42,191--本次同步配置共耗时：0.177s
+[ZslCustomsAssist.FormMain-FormMain_Load][318][INFO][1] 2022-12-14 15:27:42,207--客户端启动中...
+[ZslCustomsAssist.FormMain-StartThreads][183][INFO][1] 2022-12-14 15:27:42,213--开启请求报文服务！
+[ZslCustomsAssist.FormMain-StartThreads][189][INFO][1] 2022-12-14 15:27:42,213--开启报文发送服务！
+[ZslCustomsAssist.FormMain-StartThreads][195][INFO][1] 2022-12-14 15:27:42,214--开启回执接收任务！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoJob][47][DEBUG][10] 2022-12-14 15:27:43,228--报文发送业务线程，开始!
+[ZslCustomsAssist.Jobs.ReportSendJob-CtrlReportSendThreads][58][INFO][10] 2022-12-14 15:27:43,229--开始处理报文发送业务，预计开启线程数：10
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:28:42,793--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:28:43,236--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:29:43,797--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:29:44,244--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:30:44,820--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:30:45,263--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:31:45,819--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:31:46,266--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:32:46,846--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:32:47,289--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:33:47,843--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:33:48,290--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:34:48,867--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:34:49,310--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:35:49,868--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:35:50,315--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:36:50,892--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:36:51,336--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:37:51,896--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:37:52,343--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:38:52,924--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:38:53,366--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:39:53,932--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:39:54,379--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:40:54,962--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:40:55,405--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:41:55,958--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:41:56,405--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:42:56,992--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:42:57,438--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:43:57,996--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:43:58,462--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:44:59,030--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:44:59,473--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:46:00,040--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:46:00,507--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:47:01,069--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:47:01,512--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:48:02,069--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:48:02,536--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:49:03,106--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:49:03,549--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:50:04,107--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:50:04,574--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:51:05,124--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:51:05,567--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:52:06,135--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:52:06,582--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:53:07,139--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:53:07,582--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:54:08,162--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:54:08,609--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:55:09,174--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:55:09,617--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:56:10,189--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:56:10,635--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:57:11,194--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:57:11,636--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:58:12,212--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:58:12,659--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:59:13,213--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 15:59:13,656--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:00:14,235--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:00:14,682--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:01:15,246--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:01:15,689--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:02:16,267--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:02:16,714--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:03:17,267--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:03:17,710--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:04:18,293--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:04:18,740--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:05:19,299--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:05:19,743--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:06:20,329--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:06:20,776--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:07:21,338--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:07:21,800--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:08:22,350--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:08:22,797--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:09:23,351--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:09:23,814--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:10:24,370--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:10:24,817--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:11:25,383--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:11:25,846--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:12:26,406--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:12:26,853--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:13:27,424--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:13:27,887--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:14:28,446--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:14:28,892--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:15:29,479--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:15:29,921--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:16:30,479--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:16:30,926--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:17:31,506--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:17:31,949--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:18:32,501--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:18:32,948--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:19:33,530--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:19:33,973--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:20:34,534--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:20:34,981--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:21:35,563--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:21:36,006--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:22:36,571--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:22:37,019--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:23:37,592--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:23:38,036--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:24:38,598--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:24:39,045--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:25:39,623--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:25:40,066--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:26:40,630--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:26:41,077--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:27:41,653--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:27:42,097--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:28:42,656--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:28:43,103--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:29:43,685--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:29:44,128--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:30:44,679--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:30:45,145--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:31:45,698--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:31:46,141--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:32:46,704--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:32:47,172--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:33:47,731--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:33:48,173--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:34:48,746--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:34:49,214--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:35:49,772--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:35:50,217--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:36:50,772--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:36:51,239--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:37:51,805--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:37:52,250--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:38:52,838--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:38:53,285--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:39:53,849--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:39:54,296--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:40:54,867--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:40:55,315--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:41:55,867--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:41:56,310--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:42:56,900--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:42:57,347--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:43:57,913--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:43:58,356--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:44:58,946--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:44:59,393--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:45:59,952--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:46:00,395--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:47:00,970--E-PortMsg：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][15] 2022-12-14 16:47:01,416--E-PortMsg：获取卡号成功！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][140][INFO][30] 2022-12-14 16:47:14,691--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[30]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][140][INFO][33] 2022-12-14 16:47:14,691--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[33]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][140][INFO][31] 2022-12-14 16:47:14,691--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[31]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][140][INFO][37] 2022-12-14 16:47:14,691--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[37]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][140][INFO][35] 2022-12-14 16:47:14,691--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[35]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][140][INFO][32] 2022-12-14 16:47:14,691--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[32]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][140][INFO][18] 2022-12-14 16:47:14,691--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[18]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][140][INFO][34] 2022-12-14 16:47:14,691--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[34]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][140][INFO][36] 2022-12-14 16:47:14,691--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[36]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][140][INFO][38] 2022-12-14 16:47:14,691--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[38]从线程池中移除
+程序关闭!!!!!!

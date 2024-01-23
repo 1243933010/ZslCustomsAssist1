@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<CEB312Message xmlns="http://www.chinaport.gov.cn/ceb" version="1.0" guid="B7425850-3B91-4A12-B37E-2286BF73E304">
+    <OrderReturn>
+        <guid>A553338D-D7B9-4F78-8058-A4E9091B254E</guid>
+        <ebpCode>4403961X7S</ebpCode>
+        <ebcCode>31149679BZ</ebcCode>
+        <orderNo>276618161072</orderNo>
+        <returnStatus>-301008</returnStatus>
+        <returnTime>20230927173537055</returnTime>
+        <returnInfo>订单[电商企业编码：31149679BZ,订单编号：276618161072]报文校验失败:订单客户端协议发送方的senderId与传输节点dxpId信息不一致</returnInfo>
+    </OrderReturn>
+</CEB312Message>

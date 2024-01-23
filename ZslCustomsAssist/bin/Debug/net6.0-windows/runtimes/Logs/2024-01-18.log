@@ -1,0 +1,17 @@
+﻿程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2024-01-18 17:58:42,288--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2024-01-18 17:58:42,320--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-01-18 17:58:43,131--【打开设备50040】提示信息！
+[ZslCustomsAssist.FormMain-InitSystem][174][ERROR][1] 2024-01-18 17:58:43,163--System.Exception: [读卡器底层库]打开读卡器失败:错误码=50040
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 372
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.OpenDevice() in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 99
+   at ZslCustomsAssist.FormMain.InitSystem() in D:\file\ZslCustomsAssist\ZslCustomsAssist\FormMain.cs:line 167
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][11] 2024-01-18 17:58:53,612--【关闭加密设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][11] 2024-01-18 17:58:53,613--E-PortMsg--==：关闭加密设备成功！
+[ZslCustomsAssist.Jobs.ExitProgramJob+<>c__DisplayClass2_0-<QuitApplication>b__0][61][INFO][11] 2024-01-18 17:58:53,634--本次启动:
+发送报文数	0
+发送失败报文数	0
+接收回执数	0
+写入回执数	0
+程序退出！
+程序关闭!!!!!!
