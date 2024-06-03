@@ -36,19 +36,19 @@ namespace ZslCustomsAssist.Utils
 
         public static string XmlAbstractSign(string report)
         {
-            ////这个是直接加载xml然后加密，不需要塞其他数据，走的加密摘要流程
-            //XmlDocument xmlDocument = new XmlDocument();
-            //xmlDocument.LoadXml(report);
-            //return SignXmlUtil.SignXmlAbstractDoc(xmlDocument);
-
-
-            //这个是需要加载模板塞数据，如果走的直接加密摘要数据需要注释
+            //这个是直接加载xml然后加密，不需要塞其他数据，走的加密摘要流程
             XmlDocument xmlDocument = new XmlDocument();
             xmlDocument.LoadXml(report);
-            string digestValue = ServerCore.userData.szAlgoFlag == 65536UL ? SignXmlUtil.GetDigest(DeclareMessageXmlSign.getC14NTranXml(xmlDocument)) : Sm3Crypto.ToSM3Base64Str(DeclareMessageXmlSign.getC14NTranXml(xmlDocument));
-            AbstractLog.logger.Info((string)("【" + digestValue + "】digestValue值-------！" + ServerCore.userData.szAlgoFlag));
-            SignXmlUtil.SignXmlDoc1(xmlDocument, digestValue);
-            return xmlDocument.OuterXml;
+            return SignXmlUtil.SignXmlAbstractDoc(xmlDocument);
+
+
+            ////这个是需要加载模板塞数据，如果走的直接加密摘要数据需要注释
+            //XmlDocument xmlDocument = new XmlDocument();
+            //xmlDocument.LoadXml(report);
+            //string digestValue = ServerCore.userData.szAlgoFlag == 65536UL ? SignXmlUtil.GetDigest(DeclareMessageXmlSign.getC14NTranXml(xmlDocument)) : Sm3Crypto.ToSM3Base64Str(DeclareMessageXmlSign.getC14NTranXml(xmlDocument));
+            //AbstractLog.logger.Info((string)("【" + digestValue + "】digestValue值-------！" + ServerCore.userData.szAlgoFlag));
+            //SignXmlUtil.SignXmlDoc1(xmlDocument, digestValue);
+            //return xmlDocument.OuterXml;
 
         }
 
