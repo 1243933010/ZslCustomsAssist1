@@ -157,7 +157,7 @@ namespace ZslCustomsAssist.SPSecure
             string certNo = str.Substring(0, length);
             try
             {
-                SPSecureAPI.SpcGetErrMsg("获取证书号", errorCode);
+                SPSecureAPI.SpcGetErrMsg("获取证书号" + certNo, errorCode);
             }
             catch (Exception ex)
             {

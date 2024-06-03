@@ -181,6 +181,7 @@ namespace ZslCustomsAssist.Service
             string url = ServerCore.ZslApiServicesUrl + "/customs/returnReceipt";
             string postStr = fileContent;
 
+            LogHelper.SaveLog("调用中商旅辅助系统回执接口参数11112222：" + JsonConvert.SerializeObject(postStr), LogLevel.Error);
             try
             {
                 string result = HttpHelper.HttpPost(url, postStr, GetAuthHeaders(), "UTF-8", "application/xml");

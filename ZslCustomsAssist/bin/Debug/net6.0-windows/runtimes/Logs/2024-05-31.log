@@ -1,0 +1,768 @@
+﻿程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2024-05-31 17:38:19,507--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2024-05-31 17:38:19,577--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:38:22,896--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:38:22,907--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:38:22,913--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:38:22,914--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.ClearTimeOutFileJob-ClearFile][55][INFO][24] 2024-05-31 17:38:23,446--D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Debug\net6.0-windows\Log不存在，取消清除！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:38:23,938--【获取卡内证书算法标识0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:38:23,939--E-PortMsg--==：获取卡内证书算法标识成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:38:23,940--【获取证书号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:38:23,941--E-PortMsg--==：获取证书号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:38:23,986--【获取申请者名称0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:38:23,987--E-PortMsg--==：获取申请者名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:38:23,988--【获取单位代码0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:38:23,989--E-PortMsg--==：获取单位代码成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:38:23,990--【获取单位名称0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:38:23,990--E-PortMsg--==：获取单位名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:38:23,991--【获取单位类别0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:38:23,992--E-PortMsg--==：获取单位类别成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:38:23,993--【获取卡签名证书0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:38:23,993--E-PortMsg--==：获取卡签名证书成功！
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][71][INFO][1] 2024-05-31 17:38:24,671--本次同步配置共耗时：0.65s
+[ZslCustomsAssist.FormMain-FormMain_Load][337][INFO][1] 2024-05-31 17:38:24,714--客户端启动中...
+[ZslCustomsAssist.FormMain-StartThreads][199][INFO][1] 2024-05-31 17:38:24,735--开启请求报文服务！
+[ZslCustomsAssist.FormMain-StartThreads][205][INFO][1] 2024-05-31 17:38:24,745--开启报文发送服务！
+[ZslCustomsAssist.FormMain-StartThreads][211][INFO][1] 2024-05-31 17:38:24,751--开启回执接收任务！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoJob][49][DEBUG][16] 2024-05-31 17:38:25,760--报文发送业务线程，开始!
+[ZslCustomsAssist.Jobs.ReportSendJob-CtrlReportSendThreads][60][INFO][16] 2024-05-31 17:38:25,761--开始处理报文发送业务，预计开启线程数：10
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][33] 2024-05-31 17:38:26,781--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][34] 2024-05-31 17:38:27,787--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][71][ERROR][14] 2024-05-31 17:38:28,376--请求摘要数据=============================
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:28,380--{
+  "id": "293411200407",
+  "type": 1,
+  "guid": "C3E5495E-DBF9-5291-7D7A-C4E7C52F4AAC",
+  "orderNo": "293411200407",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_293411200407",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>qgYVo7st6QPeb6pdBG4ZYsfhux8=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:28,427--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>qgYVo7st6QPeb6pdBG4ZYsfhux8=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:28,544--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:28,545--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:28,545--{
+  "id": "293411200407",
+  "type": 1,
+  "guid": "C3E5495E-DBF9-5291-7D7A-C4E7C52F4AAC",
+  "orderNo": "293411200407",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_293411200407",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5xZ1lWbzdzdDZRUGViNnBkQkc0WllzZmh1eDg9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "ycN6nP621y7dz0XCBRafinJJ43sq1QjzXlv5pAmCSJok0hOz8fxTqu/wp3t99iRZfbgDuFakad8ZG087abn6IA=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:28,546--【{"id":"293411200407","type":1,"guid":"C3E5495E-DBF9-5291-7D7A-C4E7C52F4AAC","orderNo":"293411200407","fileName":"SZCPORTCEB311Message_EDI4403961X7S_E001_293411200407","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5xZ1lWbzdzdDZRUGViNnBkQkc0WllzZmh1eDg9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"ycN6nP621y7dz0XCBRafinJJ43sq1QjzXlv5pAmCSJok0hOz8fxTqu/wp3t99iRZfbgDuFakad8ZG087abn6IA=="}】postStr数据！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][27] 2024-05-31 17:38:28,801--执行了OnDoReportSend！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:29,309--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:29,309--{
+  "id": "296187815649",
+  "type": 1,
+  "guid": "EA500324-6A0D-B79C-1D0B-193A95237848",
+  "orderNo": "296187815649",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_296187815649",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>qr0jA8fjzf0kzSBIFIcZ86y/VnE=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:29,309--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>qr0jA8fjzf0kzSBIFIcZ86y/VnE=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:29,391--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:29,391--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:29,392--{
+  "id": "296187815649",
+  "type": 1,
+  "guid": "EA500324-6A0D-B79C-1D0B-193A95237848",
+  "orderNo": "296187815649",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_296187815649",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5xcjBqQThmanpmMGt6U0JJRkljWjg2eS9WbkU9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "zKixYdqU+1Qmm1FxYULE9iJ+ew9qAqHLqrCXLK4P7JS8AJpFi872jaevwmVIGSjIFYrVNWP8oNTVmoYb6hZwXQ=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:29,392--【{"id":"296187815649","type":1,"guid":"EA500324-6A0D-B79C-1D0B-193A95237848","orderNo":"296187815649","fileName":"SZCPORTCEB311Message_EDI4403961X7S_E001_296187815649","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5xcjBqQThmanpmMGt6U0JJRkljWjg2eS9WbkU9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"zKixYdqU+1Qmm1FxYULE9iJ+ew9qAqHLqrCXLK4P7JS8AJpFi872jaevwmVIGSjIFYrVNWP8oNTVmoYb6hZwXQ=="}】postStr数据！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:29,805--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:29,805--{
+  "id": "296201072679",
+  "type": 1,
+  "guid": "2D36FAC4-5AEC-BDA3-114C-406CEB72C34A",
+  "orderNo": "296201072679",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_296201072679",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>xKXn6tAFuj2D4+MbId5fvX762dc=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:29,806--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>xKXn6tAFuj2D4+MbId5fvX762dc=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][35] 2024-05-31 17:38:29,813--执行了OnDoReportSend！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:29,887--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:29,887--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:29,888--{
+  "id": "296201072679",
+  "type": 1,
+  "guid": "2D36FAC4-5AEC-BDA3-114C-406CEB72C34A",
+  "orderNo": "296201072679",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_296201072679",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT54S1huNnRBRnVqMkQ0K01iSWQ1ZnZYNzYyZGM9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "XjVPKsFI002QxQd4aWAUtWBvFxH0r3cosrH474Zs4SGfqyRDqC8Qa1F9a/lMT8G0Jh0ClKVLLgNk3xORiGxAxw=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:29,888--【{"id":"296201072679","type":1,"guid":"2D36FAC4-5AEC-BDA3-114C-406CEB72C34A","orderNo":"296201072679","fileName":"SZCPORTCEB311Message_EDI4403961X7S_E001_296201072679","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT54S1huNnRBRnVqMkQ0K01iSWQ1ZnZYNzYyZGM9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"XjVPKsFI002QxQd4aWAUtWBvFxH0r3cosrH474Zs4SGfqyRDqC8Qa1F9a/lMT8G0Jh0ClKVLLgNk3xORiGxAxw=="}】postStr数据！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:30,422--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:30,422--{
+  "id": "293566250416",
+  "type": 1,
+  "guid": "D58456CC-F15B-0604-5CA3-C7637945FBD0",
+  "orderNo": "293566250416",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_293566250416",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>KbdxqIZTmajbosIGMKCW4brFHJQ=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:30,422--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>KbdxqIZTmajbosIGMKCW4brFHJQ=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:30,504--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:30,505--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:30,505--{
+  "id": "293566250416",
+  "type": 1,
+  "guid": "D58456CC-F15B-0604-5CA3-C7637945FBD0",
+  "orderNo": "293566250416",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_293566250416",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5LYmR4cUlaVG1hamJvc0lHTUtDVzRickZISlE9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "a30tQVW2WBMQFi7/n3w29ynfoj2affUHf4iJ/7OBUnmzbNXLcQ086J99923x1lZvQQ5eFuiU5wuMMKQJiC2X7w=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:30,505--【{"id":"293566250416","type":1,"guid":"D58456CC-F15B-0604-5CA3-C7637945FBD0","orderNo":"293566250416","fileName":"SZCPORTCEB311Message_EDI4403961X7S_E001_293566250416","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5LYmR4cUlaVG1hamJvc0lHTUtDVzRickZISlE9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"a30tQVW2WBMQFi7/n3w29ynfoj2affUHf4iJ/7OBUnmzbNXLcQ086J99923x1lZvQQ5eFuiU5wuMMKQJiC2X7w=="}】postStr数据！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][23] 2024-05-31 17:38:30,822--执行了OnDoReportSend！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:30,954--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:30,955--{
+  "id": "296233046250",
+  "type": 1,
+  "guid": "65D9015E-C01D-D018-ADF1-DF176AA079F8",
+  "orderNo": "296233046250",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_296233046250",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>QmcQwOLF/MwtX5FMByNTAsm8X/8=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:30,955--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>QmcQwOLF/MwtX5FMByNTAsm8X/8=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:31,038--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:31,039--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:31,039--{
+  "id": "296233046250",
+  "type": 1,
+  "guid": "65D9015E-C01D-D018-ADF1-DF176AA079F8",
+  "orderNo": "296233046250",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_296233046250",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5RbWNRd09MRi9Nd3RYNUZNQnlOVEFzbThYLzg9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "Qt7iuf2yK6bhDbxepK23Dqui3Sdh6RPwZaaA+tCC3BE0pFXV8Ijl0CNspZrJHFy7nFubtpY67ZLWl4gM4RUYCg=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:31,039--【{"id":"296233046250","type":1,"guid":"65D9015E-C01D-D018-ADF1-DF176AA079F8","orderNo":"296233046250","fileName":"SZCPORTCEB311Message_EDI4403961X7S_E001_296233046250","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5RbWNRd09MRi9Nd3RYNUZNQnlOVEFzbThYLzg9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"Qt7iuf2yK6bhDbxepK23Dqui3Sdh6RPwZaaA+tCC3BE0pFXV8Ijl0CNspZrJHFy7nFubtpY67ZLWl4gM4RUYCg=="}】postStr数据！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:31,432--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:31,433--{
+  "id": "293601102704",
+  "type": 1,
+  "guid": "31B863B8-0B15-3B99-C261-D60AC2488D7D",
+  "orderNo": "293601102704",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_293601102704",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>v8LIlBXETgmWdi68VqekJnMhOI8=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:31,434--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>v8LIlBXETgmWdi68VqekJnMhOI8=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:31,516--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:31,517--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:31,517--{
+  "id": "293601102704",
+  "type": 1,
+  "guid": "31B863B8-0B15-3B99-C261-D60AC2488D7D",
+  "orderNo": "293601102704",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_293601102704",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT52OExJbEJYRVRnbVdkaTY4VnFla0puTWhPSTg9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "fuVUBdxf7/fNO193QkCQFEf0Nq5032T62jmRA0c4VP+UGCH4GTl5mByuztoyRsak9HWOwoCkYthJmFySIn2cEQ=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:31,517--【{"id":"293601102704","type":1,"guid":"31B863B8-0B15-3B99-C261-D60AC2488D7D","orderNo":"293601102704","fileName":"SZCPORTCEB311Message_EDI4403961X7S_E001_293601102704","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT52OExJbEJYRVRnbVdkaTY4VnFla0puTWhPSTg9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"fuVUBdxf7/fNO193QkCQFEf0Nq5032T62jmRA0c4VP+UGCH4GTl5mByuztoyRsak9HWOwoCkYthJmFySIn2cEQ=="}】postStr数据！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][36] 2024-05-31 17:38:31,841--执行了OnDoReportSend！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:31,958--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:31,958--{
+  "id": "293551652319",
+  "type": 1,
+  "guid": "C1C6F05F-F059-497F-F8DD-17F25D5DEC34",
+  "orderNo": "293551652319",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_293551652319",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>hM9peH4ls4MrAr8VQhStnE/Xodw=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:31,959--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>hM9peH4ls4MrAr8VQhStnE/Xodw=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:32,041--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:32,042--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:32,042--{
+  "id": "293551652319",
+  "type": 1,
+  "guid": "C1C6F05F-F059-497F-F8DD-17F25D5DEC34",
+  "orderNo": "293551652319",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_293551652319",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5oTTlwZUg0bHM0TXJBcjhWUWhTdG5FL1hvZHc9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "30baLVessw7knrm1MKN3spyhaxb6Ur6cPU9cpjLTGGXpYRlYMe/kkE0T+/+RknL+fwF3M6q6Qsc34PNwBTwuag=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:32,042--【{"id":"293551652319","type":1,"guid":"C1C6F05F-F059-497F-F8DD-17F25D5DEC34","orderNo":"293551652319","fileName":"SZCPORTCEB311Message_EDI4403961X7S_E001_293551652319","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5oTTlwZUg0bHM0TXJBcjhWUWhTdG5FL1hvZHc9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"30baLVessw7knrm1MKN3spyhaxb6Ur6cPU9cpjLTGGXpYRlYMe/kkE0T+/+RknL+fwF3M6q6Qsc34PNwBTwuag=="}】postStr数据！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:32,626--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:32,626--{
+  "id": "296283347595",
+  "type": 1,
+  "guid": "A2603F51-CFEA-3190-681B-4A35FB1DDACC",
+  "orderNo": "296283347595",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_296283347595",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>7gR2n/2YBkA+fKUxn+Xr/3J2UJI=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:32,626--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>7gR2n/2YBkA+fKUxn+Xr/3J2UJI=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:32,708--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:32,709--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:32,709--{
+  "id": "296283347595",
+  "type": 1,
+  "guid": "A2603F51-CFEA-3190-681B-4A35FB1DDACC",
+  "orderNo": "296283347595",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_296283347595",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT43Z1Iybi8yWUJrQStmS1V4bitYci8zSjJVSkk9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "icMyOW/bMxqXWKyS2U2DDcM67DgSe54q7BKxXAzqt5xpbTrs/kg91y0Ed82VCha0kS330cwDAmlcemiWBJAL7w=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:32,709--【{"id":"296283347595","type":1,"guid":"A2603F51-CFEA-3190-681B-4A35FB1DDACC","orderNo":"296283347595","fileName":"SZCPORTCEB311Message_EDI4403961X7S_E001_296283347595","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT43Z1Iybi8yWUJrQStmS1V4bitYci8zSjJVSkk9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"icMyOW/bMxqXWKyS2U2DDcM67DgSe54q7BKxXAzqt5xpbTrs/kg91y0Ed82VCha0kS330cwDAmlcemiWBJAL7w=="}】postStr数据！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][37] 2024-05-31 17:38:32,867--执行了OnDoReportSend！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:33,147--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:33,148--{
+  "id": "293411200407",
+  "type": 1,
+  "guid": "D60FBE7C-0140-F865-790B-BC9BB5960913",
+  "orderNo": "293411200407",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_293411200407",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>1TcpL6BgP998cVOJ1mlBTuqXhLA=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:33,148--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>1TcpL6BgP998cVOJ1mlBTuqXhLA=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:33,231--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:33,232--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:33,232--{
+  "id": "293411200407",
+  "type": 1,
+  "guid": "D60FBE7C-0140-F865-790B-BC9BB5960913",
+  "orderNo": "293411200407",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_293411200407",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT4xVGNwTDZCZ1A5OThjVk9KMW1sQlR1cVhoTEE9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "GZAP2F4TwgZ1LkGYslxofqEA/kOQU5/guNEjJS9H2y4tLiEj7WPgnkQJ8dIRlm3vHvk/7rxMyXeXA0s7pCXW3g=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:33,232--【{"id":"293411200407","type":1,"guid":"D60FBE7C-0140-F865-790B-BC9BB5960913","orderNo":"293411200407","fileName":"SZCPORTCEB621Message_EDI4403961X7S_E001_293411200407","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT4xVGNwTDZCZ1A5OThjVk9KMW1sQlR1cVhoTEE9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"GZAP2F4TwgZ1LkGYslxofqEA/kOQU5/guNEjJS9H2y4tLiEj7WPgnkQJ8dIRlm3vHvk/7rxMyXeXA0s7pCXW3g=="}】postStr数据！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:33,704--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:33,705--{
+  "id": "296187815649",
+  "type": 1,
+  "guid": "363EEDD3-6880-5D27-3985-DF21148DEA4D",
+  "orderNo": "296187815649",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_296187815649",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>z+T325Dypq0nGZbQl7R44QVI3Y0=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:33,705--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>z+T325Dypq0nGZbQl7R44QVI3Y0=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:33,787--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:33,787--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:33,788--{
+  "id": "296187815649",
+  "type": 1,
+  "guid": "363EEDD3-6880-5D27-3985-DF21148DEA4D",
+  "orderNo": "296187815649",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_296187815649",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT56K1QzMjVEeXBxMG5HWmJRbDdSNDRRVkkzWTA9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "QWYHGrqw8jX4Oc0dEFBTfxkjmqtWKTkWt4s9t+OfVQAIqMe0l4e9MwkUQQCBXDHWQuYop297GuNlXZvmRGMjDA=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:33,788--【{"id":"296187815649","type":1,"guid":"363EEDD3-6880-5D27-3985-DF21148DEA4D","orderNo":"296187815649","fileName":"SZCPORTCEB621Message_EDI4403961X7S_E001_296187815649","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT56K1QzMjVEeXBxMG5HWmJRbDdSNDRRVkkzWTA9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"QWYHGrqw8jX4Oc0dEFBTfxkjmqtWKTkWt4s9t+OfVQAIqMe0l4e9MwkUQQCBXDHWQuYop297GuNlXZvmRGMjDA=="}】postStr数据！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][38] 2024-05-31 17:38:33,860--执行了OnDoReportSend！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:34,184--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:34,184--{
+  "id": "296201072679",
+  "type": 1,
+  "guid": "801E6485-8839-0928-CE13-6E0D7C3654BC",
+  "orderNo": "296201072679",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_296201072679",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>6HkdZmvf2cafKne9GFgAk0pzCBk=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:34,184--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>6HkdZmvf2cafKne9GFgAk0pzCBk=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:34,266--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:34,266--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:34,267--{
+  "id": "296201072679",
+  "type": 1,
+  "guid": "801E6485-8839-0928-CE13-6E0D7C3654BC",
+  "orderNo": "296201072679",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_296201072679",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT42SGtkWm12ZjJjYWZLbmU5R0ZnQWswcHpDQms9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "SRwieF5bR21K4COiAVTNmVITEUn1ZxKb4fZ6GzyZH9pH4+aYEN1eSPRtaDshyaJQEc5f/TC+OoVI1SdV756f9g=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:34,267--【{"id":"296201072679","type":1,"guid":"801E6485-8839-0928-CE13-6E0D7C3654BC","orderNo":"296201072679","fileName":"SZCPORTCEB621Message_EDI4403961X7S_E001_296201072679","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT42SGtkWm12ZjJjYWZLbmU5R0ZnQWswcHpDQms9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"SRwieF5bR21K4COiAVTNmVITEUn1ZxKb4fZ6GzyZH9pH4+aYEN1eSPRtaDshyaJQEc5f/TC+OoVI1SdV756f9g=="}】postStr数据！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:34,647--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:34,647--{
+  "id": "293566250416",
+  "type": 1,
+  "guid": "5097A18E-7BB5-92D0-F35E-302D6421FD88",
+  "orderNo": "293566250416",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_293566250416",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>FGP5ctBc5OtVE1Miu4iM5DOV5EM=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:34,647--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>FGP5ctBc5OtVE1Miu4iM5DOV5EM=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:34,730--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:34,730--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:34,730--{
+  "id": "293566250416",
+  "type": 1,
+  "guid": "5097A18E-7BB5-92D0-F35E-302D6421FD88",
+  "orderNo": "293566250416",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_293566250416",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5GR1A1Y3RCYzVPdFZFMU1pdTRpTTVET1Y1RU09PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "8EqIYNSz6M12a9/6Q9CzEf3FRShIHelaaEa3Wq0sKTEGzK/OfBFS253peIPr6DaJqTufhq3T4xBd5ZqrowiCCA=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:34,731--【{"id":"293566250416","type":1,"guid":"5097A18E-7BB5-92D0-F35E-302D6421FD88","orderNo":"293566250416","fileName":"SZCPORTCEB621Message_EDI4403961X7S_E001_293566250416","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5GR1A1Y3RCYzVPdFZFMU1pdTRpTTVET1Y1RU09PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"8EqIYNSz6M12a9/6Q9CzEf3FRShIHelaaEa3Wq0sKTEGzK/OfBFS253peIPr6DaJqTufhq3T4xBd5ZqrowiCCA=="}】postStr数据！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][39] 2024-05-31 17:38:34,863--执行了OnDoReportSend！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:35,079--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:35,080--{
+  "id": "296233046250",
+  "type": 1,
+  "guid": "B15A2D1A-A489-8073-9737-67901AA987E2",
+  "orderNo": "296233046250",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_296233046250",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>7JFeFpwvQPK51Al/jPwBXiCikNI=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:35,080--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>7JFeFpwvQPK51Al/jPwBXiCikNI=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:35,161--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:35,161--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:35,161--{
+  "id": "296233046250",
+  "type": 1,
+  "guid": "B15A2D1A-A489-8073-9737-67901AA987E2",
+  "orderNo": "296233046250",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_296233046250",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT43SkZlRnB3dlFQSzUxQWwvalB3QlhpQ2lrTkk9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "65bJelN25QMNwmaeet31G70164Hr6ITtnXHr4OPCLaJ+23JgcnBijKFBrKHU+1kSIvc2ZcSBYZ0Lj6nhmAaSPQ=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:35,162--【{"id":"296233046250","type":1,"guid":"B15A2D1A-A489-8073-9737-67901AA987E2","orderNo":"296233046250","fileName":"SZCPORTCEB621Message_EDI4403961X7S_E001_296233046250","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT43SkZlRnB3dlFQSzUxQWwvalB3QlhpQ2lrTkk9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"65bJelN25QMNwmaeet31G70164Hr6ITtnXHr4OPCLaJ+23JgcnBijKFBrKHU+1kSIvc2ZcSBYZ0Lj6nhmAaSPQ=="}】postStr数据！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:35,539--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:35,540--{
+  "id": "293601102704",
+  "type": 1,
+  "guid": "2822D5B2-B2ED-31A2-D729-F95468596C6A",
+  "orderNo": "293601102704",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_293601102704",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>9JKsjCdFR3JHMAGUYGdffnVPknE=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:35,540--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>9JKsjCdFR3JHMAGUYGdffnVPknE=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:35,621--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:35,621--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:35,622--{
+  "id": "293601102704",
+  "type": 1,
+  "guid": "2822D5B2-B2ED-31A2-D729-F95468596C6A",
+  "orderNo": "293601102704",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_293601102704",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT45SktzakNkRlIzSkhNQUdVWUdkZmZuVlBrbkU9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "yhWcveB5V2lPb1mI9jAiqF7UC1BDTmcSZHsxlgSH9E/6L6zI5lAbZ2vfO3eZ3jHu2GxMaiKWBdAUm8ReRvzndQ=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:35,622--【{"id":"293601102704","type":1,"guid":"2822D5B2-B2ED-31A2-D729-F95468596C6A","orderNo":"293601102704","fileName":"SZCPORTCEB621Message_EDI4403961X7S_E001_293601102704","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT45SktzakNkRlIzSkhNQUdVWUdkZmZuVlBrbkU9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"yhWcveB5V2lPb1mI9jAiqF7UC1BDTmcSZHsxlgSH9E/6L6zI5lAbZ2vfO3eZ3jHu2GxMaiKWBdAUm8ReRvzndQ=="}】postStr数据！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][40] 2024-05-31 17:38:35,867--执行了OnDoReportSend！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:36,011--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:38:36,011--{
+  "id": "293551652319",
+  "type": 1,
+  "guid": "5DFF38D4-C1AA-D8D6-F5C1-C60CDFAB021E",
+  "orderNo": "293551652319",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_293551652319",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>iSKftM+ZPeq+qSbCHDwBDu60ypo=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:38:36,011--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>iSKftM+ZPeq+qSbCHDwBDu60ypo=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:38:36,094--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:38:36,094--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:38:36,094--{
+  "id": "293551652319",
+  "type": 1,
+  "guid": "5DFF38D4-C1AA-D8D6-F5C1-C60CDFAB021E",
+  "orderNo": "293551652319",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_293551652319",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5pU0tmdE0rWlBlcStxU2JDSER3QkR1NjB5cG89PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "pk9PtbgEvE55s7zK6XZbfzt53CPBFOD7dGE99oYAEwR2FWT+syalRAjXFxQg0fqgfayHuVmBF7wg8y5zw7EeOQ=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:38:36,095--【{"id":"293551652319","type":1,"guid":"5DFF38D4-C1AA-D8D6-F5C1-C60CDFAB021E","orderNo":"293551652319","fileName":"SZCPORTCEB621Message_EDI4403961X7S_E001_293551652319","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5pU0tmdE0rWlBlcStxU2JDSER3QkR1NjB5cG89PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"pk9PtbgEvE55s7zK6XZbfzt53CPBFOD7dGE99oYAEwR2FWT+syalRAjXFxQg0fqgfayHuVmBF7wg8y5zw7EeOQ=="}】postStr数据！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:38:36,476--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][27] 2024-05-31 17:39:00,001--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[27]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][35] 2024-05-31 17:39:00,001--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[35]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][36] 2024-05-31 17:39:00,001--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[36]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][33] 2024-05-31 17:39:00,001--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[33]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][34] 2024-05-31 17:39:00,001--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[34]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][23] 2024-05-31 17:39:00,001--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[23]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][37] 2024-05-31 17:39:00,001--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[37]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][38] 2024-05-31 17:39:00,001--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[38]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][39] 2024-05-31 17:39:00,001--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[39]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][40] 2024-05-31 17:39:00,001--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[40]从线程池中移除
+程序关闭!!!!!!
+程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2024-05-31 17:39:05,323--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2024-05-31 17:39:05,368--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:39:07,803--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:39:07,809--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:39:07,811--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:39:07,812--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.ClearTimeOutFileJob-ClearFile][55][INFO][10] 2024-05-31 17:39:08,119--D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Debug\net6.0-windows\Log不存在，取消清除！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:39:08,632--【获取卡内证书算法标识0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:39:08,633--E-PortMsg--==：获取卡内证书算法标识成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:39:08,633--【获取证书号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:39:08,634--E-PortMsg--==：获取证书号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:39:08,660--【获取申请者名称0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:39:08,661--E-PortMsg--==：获取申请者名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:39:08,661--【获取单位代码0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:39:08,662--E-PortMsg--==：获取单位代码成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:39:08,662--【获取单位名称0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:39:08,662--E-PortMsg--==：获取单位名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:39:08,663--【获取单位类别0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:39:08,663--E-PortMsg--==：获取单位类别成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:39:08,663--【获取卡签名证书0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:39:08,664--E-PortMsg--==：获取卡签名证书成功！
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][71][INFO][1] 2024-05-31 17:39:11,354--本次同步配置共耗时：2.675s
+[ZslCustomsAssist.FormMain-FormMain_Load][337][INFO][1] 2024-05-31 17:39:11,376--客户端启动中...
+[ZslCustomsAssist.FormMain-StartThreads][199][INFO][1] 2024-05-31 17:39:11,389--开启请求报文服务！
+[ZslCustomsAssist.FormMain-StartThreads][205][INFO][1] 2024-05-31 17:39:11,398--开启报文发送服务！
+[ZslCustomsAssist.FormMain-StartThreads][211][INFO][1] 2024-05-31 17:39:11,400--开启回执接收任务！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoJob][49][DEBUG][15] 2024-05-31 17:39:12,401--报文发送业务线程，开始!
+[ZslCustomsAssist.Jobs.ReportSendJob-CtrlReportSendThreads][60][INFO][15] 2024-05-31 17:39:12,402--开始处理报文发送业务，预计开启线程数：10
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][32] 2024-05-31 17:39:13,416--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][33] 2024-05-31 17:39:14,418--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][26] 2024-05-31 17:39:15,419--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][34] 2024-05-31 17:39:16,434--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][22] 2024-05-31 17:39:17,436--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][35] 2024-05-31 17:39:18,437--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][36] 2024-05-31 17:39:19,441--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][37] 2024-05-31 17:39:20,444--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][6] 2024-05-31 17:39:21,450--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][38] 2024-05-31 17:39:22,466--执行了OnDoReportSend！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][20] 2024-05-31 17:40:11,497--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][20] 2024-05-31 17:40:11,497--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][20] 2024-05-31 17:40:11,497--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][20] 2024-05-31 17:40:11,497--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][20] 2024-05-31 17:40:11,497--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][36] 2024-05-31 17:40:40,574--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[36]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][32] 2024-05-31 17:40:40,574--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[32]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][33] 2024-05-31 17:40:40,574--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[33]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][26] 2024-05-31 17:40:40,574--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[26]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][34] 2024-05-31 17:40:40,574--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[34]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][22] 2024-05-31 17:40:40,574--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[22]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][35] 2024-05-31 17:40:40,574--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[35]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][37] 2024-05-31 17:40:40,574--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[37]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][6] 2024-05-31 17:40:40,574--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[6]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][38] 2024-05-31 17:40:40,574--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[38]从线程池中移除
+程序关闭!!!!!!
+程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2024-05-31 17:48:27,340--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2024-05-31 17:48:27,391--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:48:28,332--【打开设备50040】提示信息！
+[ZslCustomsAssist.FormMain-InitSystem][174][ERROR][1] 2024-05-31 17:48:28,370--System.Exception: [读卡器底层库]打开读卡器失败:错误码=50040
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 372
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.OpenDevice() in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 99
+   at ZslCustomsAssist.FormMain.InitSystem() in D:\file\ZslCustomsAssist\ZslCustomsAssist\FormMain.cs:line 167
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][11] 2024-05-31 17:48:33,789--【关闭加密设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][11] 2024-05-31 17:48:33,792--E-PortMsg--==：关闭加密设备成功！
+[ZslCustomsAssist.Jobs.ExitProgramJob+<>c__DisplayClass2_0-<QuitApplication>b__0][61][INFO][11] 2024-05-31 17:48:33,847--本次启动:
+发送报文数	0
+发送失败报文数	0
+接收回执数	0
+写入回执数	0
+程序退出！
+程序关闭!!!!!!
+程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2024-05-31 17:48:45,186--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2024-05-31 17:48:45,215--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:48:46,165--【打开设备50040】提示信息！
+[ZslCustomsAssist.FormMain-InitSystem][174][ERROR][1] 2024-05-31 17:48:46,186--System.Exception: [读卡器底层库]打开读卡器失败:错误码=50040
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 372
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.OpenDevice() in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 99
+   at ZslCustomsAssist.FormMain.InitSystem() in D:\file\ZslCustomsAssist\ZslCustomsAssist\FormMain.cs:line 167
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][24] 2024-05-31 17:48:48,135--【关闭加密设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][24] 2024-05-31 17:48:48,136--E-PortMsg--==：关闭加密设备成功！
+[ZslCustomsAssist.Jobs.ExitProgramJob+<>c__DisplayClass2_0-<QuitApplication>b__0][61][INFO][24] 2024-05-31 17:48:48,146--本次启动:
+发送报文数	0
+发送失败报文数	0
+接收回执数	0
+写入回执数	0
+程序退出！
+程序关闭!!!!!!
+程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2024-05-31 17:49:03,009--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2024-05-31 17:49:03,036--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:03,821--【打开设备50040】提示信息！
+[ZslCustomsAssist.FormMain-InitSystem][174][ERROR][1] 2024-05-31 17:49:03,841--System.Exception: [读卡器底层库]打开读卡器失败:错误码=50040
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 372
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.OpenDevice() in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 99
+   at ZslCustomsAssist.FormMain.InitSystem() in D:\file\ZslCustomsAssist\ZslCustomsAssist\FormMain.cs:line 167
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][24] 2024-05-31 17:49:05,055--【关闭加密设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][24] 2024-05-31 17:49:05,055--E-PortMsg--==：关闭加密设备成功！
+[ZslCustomsAssist.Jobs.ExitProgramJob+<>c__DisplayClass2_0-<QuitApplication>b__0][61][INFO][24] 2024-05-31 17:49:05,074--本次启动:
+发送报文数	0
+发送失败报文数	0
+接收回执数	0
+写入回执数	0
+程序退出！
+程序关闭!!!!!!
+程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2024-05-31 17:49:18,481--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2024-05-31 17:49:18,522--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:20,748--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:20,751--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:20,764--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:20,764--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.ClearTimeOutFileJob-ClearFile][55][INFO][11] 2024-05-31 17:49:21,529--D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Debug\net6.0-windows\Log不存在，取消清除！
+[ZslCustomsAssist.FormLogin-FormLogin_Load][127][INFO][1] 2024-05-31 17:49:21,596--当前IC卡号：2100090039046
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][27] 2024-05-31 17:49:23,306--【关闭加密设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][27] 2024-05-31 17:49:23,306--E-PortMsg--==：关闭加密设备成功！
+[ZslCustomsAssist.Jobs.ExitProgramJob+<>c__DisplayClass2_0-<QuitApplication>b__0][61][INFO][27] 2024-05-31 17:49:23,313--本次启动:
+发送报文数	0
+发送失败报文数	0
+接收回执数	0
+写入回执数	0
+程序退出！
+程序关闭!!!!!!
+程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2024-05-31 17:49:34,434--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2024-05-31 17:49:34,457--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:36,740--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:36,742--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:36,744--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:36,744--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.ClearTimeOutFileJob-ClearFile][55][INFO][11] 2024-05-31 17:49:37,738--D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Debug\net6.0-windows\Log不存在，取消清除！
+[ZslCustomsAssist.FormLogin-FormLogin_Load][127][INFO][1] 2024-05-31 17:49:37,800--当前IC卡号：2100090039046
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:51,099--【获取卡内证书算法标识0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:51,101--E-PortMsg--==：获取卡内证书算法标识成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:51,102--【获取证书号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:51,102--E-PortMsg--==：获取证书号成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:51,126--【获取申请者名称0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:51,127--E-PortMsg--==：获取申请者名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:51,127--【获取单位代码0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:51,127--E-PortMsg--==：获取单位代码成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:51,128--【获取单位名称0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:51,128--E-PortMsg--==：获取单位名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:51,128--【获取单位类别0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:51,129--E-PortMsg--==：获取单位类别成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-05-31 17:49:51,129--【获取卡签名证书0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-05-31 17:49:51,129--E-PortMsg--==：获取卡签名证书成功！
+[ZslCustomsAssist.Utils.Log.LogHelper-SaveLog][114][INFO][1] 2024-05-31 17:49:51,233--调用中商旅辅助系统登录返回结果：{"status":0,"msg":"success","data":{"token":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImtpZCI6IjQ5Mjc0MTViZjk5ZTM3ZWE2MDUyNGZjOWFhNmU5ZjI4In0.eyJzZWNyZXQiOiJlZjIwNDdhZGEwZWI0NWQ0MWM1YzJhNGQzOTAwZDU0ZSIsImlzcyI6IjExNC42Ny4yMzIuMjUxIiwiYXVkIjoiMTE0LjY3LjIzMi4yNTEiLCJpYXQiOjE3MTcxNDg5OTEsIm5iZiI6MTcxNzE0ODk5MSwiZXhwIjoxNzE5NzQwOTkxLCJqdGkiOnsiaWQiOjEsInR5cGUiOiJhcGkifX0.tdwMbRgqJp3nBWvJgoMwl84OxFFEhNvDxWxnaGiEPtk"}}
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][71][INFO][1] 2024-05-31 17:49:52,063--本次同步配置共耗时：0.755s
+[ZslCustomsAssist.FormMain-FormMain_Load][337][INFO][1] 2024-05-31 17:49:52,096--客户端启动中...
+[ZslCustomsAssist.FormMain-StartThreads][199][INFO][1] 2024-05-31 17:49:52,104--开启请求报文服务！
+[ZslCustomsAssist.FormMain-StartThreads][205][INFO][1] 2024-05-31 17:49:52,111--开启报文发送服务！
+[ZslCustomsAssist.FormMain-StartThreads][211][INFO][1] 2024-05-31 17:49:52,114--开启回执接收任务！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoJob][49][DEBUG][16] 2024-05-31 17:49:53,118--报文发送业务线程，开始!
+[ZslCustomsAssist.Jobs.ReportSendJob-CtrlReportSendThreads][60][INFO][16] 2024-05-31 17:49:53,118--开始处理报文发送业务，预计开启线程数：10
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][32] 2024-05-31 17:49:54,125--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][33] 2024-05-31 17:49:55,128--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][6] 2024-05-31 17:49:56,135--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][34] 2024-05-31 17:49:57,145--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][5] 2024-05-31 17:49:58,157--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][35] 2024-05-31 17:49:59,170--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][36] 2024-05-31 17:50:00,175--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][37] 2024-05-31 17:50:01,189--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][38] 2024-05-31 17:50:02,195--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][39] 2024-05-31 17:50:03,200--执行了OnDoReportSend！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:50:52,209--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:50:52,210--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:50:52,210--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:50:52,210--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 17:50:52,210--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][71][ERROR][14] 2024-05-31 17:51:32,724--请求摘要数据=============================
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:51:32,726--{
+  "id": "293411200407",
+  "type": 1,
+  "guid": "166F967D-3F3F-4324-DC5A-2C5273657DBD",
+  "orderNo": "293411200407",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_293411200407",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>M5wNE93tC3i7cguyog/8TQkKdkg=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:51:32,750--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>M5wNE93tC3i7cguyog/8TQkKdkg=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:51:32,866--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:51:32,867--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:51:32,867--{
+  "id": "293411200407",
+  "type": 1,
+  "guid": "166F967D-3F3F-4324-DC5A-2C5273657DBD",
+  "orderNo": "293411200407",
+  "fileName": "SZCPORTCEB311Message_EDI4403961X7S_E001_293411200407",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5NNXdORTkzdEMzaTdjZ3V5b2cvOFRRa0tka2c9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "XOmDhrQQpntL3eg3h38qbJnoTEQyLf71jYl431RGcgh2lPl3SoR2qrtjlll2aciW8a4WQhrh8Z8iUvFOu19euw=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:51:32,867--【{"id":"293411200407","type":1,"guid":"166F967D-3F3F-4324-DC5A-2C5273657DBD","orderNo":"293411200407","fileName":"SZCPORTCEB311Message_EDI4403961X7S_E001_293411200407","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT5NNXdORTkzdEMzaTdjZ3V5b2cvOFRRa0tka2c9PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"XOmDhrQQpntL3eg3h38qbJnoTEQyLf71jYl431RGcgh2lPl3SoR2qrtjlll2aciW8a4WQhrh8Z8iUvFOu19euw=="}】postStr数据！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:51:33,200--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][71][ERROR][14] 2024-05-31 17:51:39,279--请求摘要数据=============================
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][78][ERROR][14] 2024-05-31 17:51:39,280--{
+  "id": "293411200407",
+  "type": 1,
+  "guid": "ABD69149-32B1-1B59-2AEF-96D86F1E4106",
+  "orderNo": "293411200407",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_293411200407",
+  "xmlMessage": "",
+  "digestValue": "<ds:SignedInfo xmlns:ceb=\"http://www.chinaport.gov.cn/ceb\" xmlns:ds=\"http://www.w3.org/2000/09/xmldsig#\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" ><ds:CanonicalizationMethod Algorithm=\"http://www.w3.org/TR/2001/REC-xml-c14n-20010315\"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#rsa-sha1\"></ds:SignatureMethod><ds:Reference URI=\"\"><ds:Transforms><ds:Transform Algorithm=\"http://www.w3.org/2000/09/xmldsig#enveloped-signature\"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm=\"http://www.w3.org/2000/09/xmldsig#sha1\"></ds:DigestMethod><ds:DigestValue>2D2/CfzJH09Fxoh4c3spBwOtCDo=</ds:DigestValue></ds:Reference></ds:SignedInfo>",
+  "signInfo": null
+}请求摘要数据=============================000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcSignData][37][INFO][14] 2024-05-31 17:51:39,280--==<ds:SignedInfo xmlns:ceb="http://www.chinaport.gov.cn/ceb" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><ds:CanonicalizationMethod Algorithm="http://www.w3.org/TR/2001/REC-xml-c14n-20010315"></ds:CanonicalizationMethod><ds:SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1"></ds:SignatureMethod><ds:Reference URI=""><ds:Transforms><ds:Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature"></ds:Transform></ds:Transforms><ds:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1"></ds:DigestMethod><ds:DigestValue>2D2/CfzJH09Fxoh4c3spBwOtCDo=</ds:DigestValue></ds:Reference></ds:SignedInfo>——————————————————————————！System.Byte[]【System.Byte[]】XML字符串加业务签信息！695】XML字符串加业务签信息！695】XML字符串加业务签信息！True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 17:51:39,394--【XML字符串加业务签0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][14] 2024-05-31 17:51:39,395--E-PortMsg--==：XML字符串加业务签成功！
+[ZslCustomsAssist.Jobs.SendAbstractRequestJob-RequestReport][88][ERROR][14] 2024-05-31 17:51:39,395--{
+  "id": "293411200407",
+  "type": 1,
+  "guid": "ABD69149-32B1-1B59-2AEF-96D86F1E4106",
+  "orderNo": "293411200407",
+  "fileName": "SZCPORTCEB621Message_EDI4403961X7S_E001_293411200407",
+  "xmlMessage": "",
+  "digestValue": "PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT4yRDIvQ2Z6SkgwOUZ4b2g0YzNzcEJ3T3RDRG89PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+",
+  "signInfo": "Cjo19tpqXynicP+oeO6iX57TtdYynvEnsOY6Gab0YSABfm2vdu5ExR6fWWi7AspHQkrS6vdZoToBHwiK7JvzGw=="
+}请求摘要数据=============================111
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][262][INFO][14] 2024-05-31 17:51:39,395--【{"id":"293411200407","type":1,"guid":"ABD69149-32B1-1B59-2AEF-96D86F1E4106","orderNo":"293411200407","fileName":"SZCPORTCEB621Message_EDI4403961X7S_E001_293411200407","xmlMessage":"","digestValue":"PGRzOlNpZ25lZEluZm8geG1sbnM6Y2ViPSJodHRwOi8vd3d3LmNoaW5hcG9ydC5nb3YuY24vY2ViIiB4bWxuczpkcz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnIyIgeG1sbnM6eHNpPSJodHRwOi8vd3d3LnczLm9yZy8yMDAxL1hNTFNjaGVtYS1pbnN0YW5jZSIgPjxkczpDYW5vbmljYWxpemF0aW9uTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvVFIvMjAwMS9SRUMteG1sLWMxNG4tMjAwMTAzMTUiPjwvZHM6Q2Fub25pY2FsaXphdGlvbk1ldGhvZD48ZHM6U2lnbmF0dXJlTWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3JzYS1zaGExIj48L2RzOlNpZ25hdHVyZU1ldGhvZD48ZHM6UmVmZXJlbmNlIFVSST0iIj48ZHM6VHJhbnNmb3Jtcz48ZHM6VHJhbnNmb3JtIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI2VudmVsb3BlZC1zaWduYXR1cmUiPjwvZHM6VHJhbnNmb3JtPjwvZHM6VHJhbnNmb3Jtcz48ZHM6RGlnZXN0TWV0aG9kIEFsZ29yaXRobT0iaHR0cDovL3d3dy53My5vcmcvMjAwMC8wOS94bWxkc2lnI3NoYTEiPjwvZHM6RGlnZXN0TWV0aG9kPjxkczpEaWdlc3RWYWx1ZT4yRDIvQ2Z6SkgwOUZ4b2g0YzNzcEJ3T3RDRG89PC9kczpEaWdlc3RWYWx1ZT48L2RzOlJlZmVyZW5jZT48L2RzOlNpZ25lZEluZm8+","signInfo":"Cjo19tpqXynicP+oeO6iX57TtdYynvEnsOY6Gab0YSABfm2vdu5ExR6fWWi7AspHQkrS6vdZoToBHwiK7JvzGw=="}】postStr数据！
+[ZslCustomsAssist.Service.ApiService-SendDataCallbackAbstract][266][INFO][14] 2024-05-31 17:51:40,120--调用中商旅辅助系统回执接口完成
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:51:52,285--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:51:52,285--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:51:52,285--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:51:52,286--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 17:51:52,286--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:52:52,365--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:52:52,365--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:52:52,365--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:52:52,366--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 17:52:52,366--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:53:52,443--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:53:52,446--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:53:52,446--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:53:52,446--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 17:53:52,447--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:54:52,536--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:54:52,537--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:54:52,537--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:54:52,537--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 17:54:52,537--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:55:52,618--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:55:52,621--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:55:52,621--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:55:52,621--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 17:55:52,621--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:56:52,701--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:56:52,702--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:56:52,702--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:56:52,702--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 17:56:52,702--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:57:52,798--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:57:52,798--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:57:52,798--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:57:52,798--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 17:57:52,798--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:58:52,897--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:58:52,897--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:58:52,897--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:58:52,897--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 17:58:52,897--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:59:52,974--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:59:52,974--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 17:59:52,975--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 17:59:52,975--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 17:59:52,975--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:00:53,072--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:00:53,073--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:00:53,073--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:00:53,073--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 18:00:53,073--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:01:53,148--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:01:53,149--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:01:53,149--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:01:53,149--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 18:01:53,149--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:02:53,238--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:02:53,239--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:02:53,239--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:02:53,239--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 18:02:53,239--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:03:53,332--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:03:53,333--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:03:53,333--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:03:53,333--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 18:03:53,333--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:04:53,428--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:04:53,428--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:04:53,429--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:04:53,429--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 18:04:53,429--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:05:53,540--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:05:53,541--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:05:53,541--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:05:53,541--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 18:05:53,541--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:06:53,614--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:06:53,614--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:06:53,615--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-05-31 18:06:53,615--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-05-31 18:06:53,615--插卡状态正常！2100090039046---2100090039046True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-05-31 18:07:53,718--【打开设备50040】提示信息！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][38] 2024-05-31 18:07:53,763--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[38]从线程池中移除
+[ZslCustomsAssist.Jobs.CheckCardStateJob-OnDoJob][33][ERROR][21] 2024-05-31 18:07:53,763--检查插卡状态异常,可能会导致报文收发功能异常！
+System.Exception: [读卡器底层库]打开读卡器失败:错误码=50040
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 372
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.OpenDevice() in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 99
+   at ZslCustomsAssist.Jobs.CheckCardStateJob.CheckCardState() in D:\file\ZslCustomsAssist\ZslCustomsAssist\Jobs\CheckCardStateJob.cs:line 69
+   at ZslCustomsAssist.Jobs.CheckCardStateJob.OnDoJob() in D:\file\ZslCustomsAssist\ZslCustomsAssist\Jobs\CheckCardStateJob.cs:line 23
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][33] 2024-05-31 18:07:53,782--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[33]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][6] 2024-05-31 18:07:53,782--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[6]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][32] 2024-05-31 18:07:53,782--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[32]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][34] 2024-05-31 18:07:53,782--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[34]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][5] 2024-05-31 18:07:53,782--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[5]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][35] 2024-05-31 18:07:53,782--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[35]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][36] 2024-05-31 18:07:53,782--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[36]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][37] 2024-05-31 18:07:53,782--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[37]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][39] 2024-05-31 18:07:53,782--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[39]从线程池中移除
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][12] 2024-05-31 18:07:54,767--执行了OnDoReportSend！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][169][INFO][12] 2024-05-31 18:07:54,767--程序退出中/更新中/卡状态异常,不再处理任何报文！线程[12]从线程池中移除
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 18:07:55,872--【验证密码167772165】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcVerifyPIN][120][ERROR][14] 2024-05-31 18:07:55,891--System.Exception: 无效的句柄:错误码=167772165
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 372
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcVerifyPIN(String password) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 116
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 18:08:01,732--【验证密码167772165】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcVerifyPIN][120][ERROR][14] 2024-05-31 18:08:01,748--System.Exception: 无效的句柄:错误码=167772165
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 372
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcVerifyPIN(String password) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 116
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][14] 2024-05-31 18:08:07,832--【验证密码167772165】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcVerifyPIN][120][ERROR][14] 2024-05-31 18:08:07,850--System.Exception: 无效的句柄:错误码=167772165
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcGetErrMsg(String operation, UInt32 errorCode) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 372
+   at ZslCustomsAssist.SPSecure.SPSecureAPI.SpcVerifyPIN(String password) in D:\file\ZslCustomsAssist\ZslCustomsAssist\SPSecure\SPSecureAPI.cs:line 116
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][12] 2024-05-31 18:08:09,477--【关闭加密设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][12] 2024-05-31 18:08:09,478--E-PortMsg--==：关闭加密设备成功！
+[ZslCustomsAssist.Jobs.ExitProgramJob+<>c__DisplayClass2_0-<QuitApplication>b__0][61][INFO][12] 2024-05-31 18:08:09,493--本次启动:
+发送报文数	0
+发送失败报文数	0
+接收回执数	0
+写入回执数	0
+程序退出！
+程序关闭!!!!!!
