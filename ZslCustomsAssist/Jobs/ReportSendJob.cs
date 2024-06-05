@@ -461,10 +461,10 @@ private bool SendReport(string fullPath)
                                 string base64Str = Convert.ToBase64String(bytes);
                                 new ApiService().SendDataCallback(orderNoXml, SignatureValueXml, CEBType, base64Str);
                                 AbstractLog.logger.Info((string)("返回给公司京东数据！" + report + "&&&&&&&&&&&" + str3 + "{{}}{{{}}}}{{" + report.XmlMessage));
-                                return false;
-                            }
+                            return false;
+                        }
 
-                            if (ebpCodeXml == "3105961682")
+                        if (ebpCodeXml == "3105961682")
                             { //如果是这个字符串就不发送海关数据，发给清关系统
 
                                 try

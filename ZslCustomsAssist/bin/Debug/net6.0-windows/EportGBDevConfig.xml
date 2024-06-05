@@ -13,7 +13,7 @@
         <device tag="J">EpKeyThirdHD64.dll</device>
     </device_define>
     <device_group1>
-        <group index="1">BDCAE</group>
+        <group index="1">DCABE</group>
         <group index="2">FGHIJ</group>
     </device_group1>
 </eport_gb>

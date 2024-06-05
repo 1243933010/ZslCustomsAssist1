@@ -214,7 +214,7 @@ namespace ZslCustomsAssist.Properties {
         }
         
         /// <summary>
-        ///   查找类似 2100090039046 的本地化字符串。
+        ///   查找类似 2100060064918 的本地化字符串。
         /// </summary>
         internal static string RestrictedCardNo {
             get {
