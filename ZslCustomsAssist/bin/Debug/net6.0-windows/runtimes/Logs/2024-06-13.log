@@ -1,0 +1,60 @@
+﻿程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2024-06-13 11:24:38,033--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2024-06-13 11:24:38,053--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:39,928--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:39,937--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:39,938--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:39,939--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.ClearTimeOutFileJob-ClearFile][55][INFO][6] 2024-06-13 11:24:40,292--D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Debug\net6.0-windows\Log不存在，取消清除！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:40,786--【获取卡内证书算法标识0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:40,787--E-PortMsg--==：获取卡内证书算法标识成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:40,787--【获取证书号0300000000200b650】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:40,787--E-PortMsg--==：获取证书号0300000000200b65成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:40,798--【获取申请者名称0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:40,798--E-PortMsg--==：获取申请者名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:40,799--【获取单位代码0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:40,799--E-PortMsg--==：获取单位代码成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:40,799--【获取单位名称0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:40,799--E-PortMsg--==：获取单位名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:40,799--【获取单位类别0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:40,800--E-PortMsg--==：获取单位类别成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:40,800--【获取卡签名证书0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:40,800--E-PortMsg--==：获取卡签名证书成功！
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][71][INFO][1] 2024-06-13 11:24:45,130--本次同步配置共耗时：4.322s
+[ZslCustomsAssist.FormMain-FormMain_Load][337][INFO][1] 2024-06-13 11:24:45,156--客户端启动中...
+[ZslCustomsAssist.FormMain-StartThreads][199][INFO][1] 2024-06-13 11:24:45,166--开启请求报文服务！
+[ZslCustomsAssist.FormMain-StartThreads][205][INFO][1] 2024-06-13 11:24:45,167--开启报文发送服务！
+[ZslCustomsAssist.FormMain-StartThreads][211][INFO][1] 2024-06-13 11:24:45,167--开启回执接收任务！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoJob][49][DEBUG][11] 2024-06-13 11:24:46,176--报文发送业务线程，开始!
+[ZslCustomsAssist.Jobs.ReportSendJob-CtrlReportSendThreads][60][INFO][11] 2024-06-13 11:24:46,176--开始处理报文发送业务，预计开启线程数：10
+程序关闭!!!!!!
+程序开始>>>>>>
+[ZslCustomsAssist.Program-LogSystemMsg][58][INFO][1] 2024-06-13 11:24:53,510--当前客户端版本号：1.0.0.0
+[ZslCustomsAssist.Program-LogSystemMsg][59][INFO][1] 2024-06-13 11:24:53,531--当前运行环境：Windows 10 Home China(64) 版本号:22000
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:55,572--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:55,574--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:24:55,577--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:24:55,577--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.ClearTimeOutFileJob-ClearFile][55][INFO][10] 2024-06-13 11:25:08,247--D:\file\ZslCustomsAssist\ZslCustomsAssist\bin\Debug\net6.0-windows\Log不存在，取消清除！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:25:08,771--【获取卡内证书算法标识0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:25:08,772--E-PortMsg--==：获取卡内证书算法标识成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:25:08,772--【获取证书号0300000000200b650】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:25:08,772--E-PortMsg--==：获取证书号0300000000200b65成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:25:08,793--【获取申请者名称0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:25:08,793--E-PortMsg--==：获取申请者名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:25:08,794--【获取单位代码0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:25:08,794--E-PortMsg--==：获取单位代码成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:25:08,794--【获取单位名称0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:25:08,794--E-PortMsg--==：获取单位名称成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:25:08,795--【获取单位类别0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:25:08,795--E-PortMsg--==：获取单位类别成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][1] 2024-06-13 11:25:08,795--【获取卡签名证书0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][1] 2024-06-13 11:25:08,795--E-PortMsg--==：获取卡签名证书成功！
+[ZslCustomsAssist.Jobs.SynchronousConfigurationJob-SynchronousConfigurationStart][71][INFO][1] 2024-06-13 11:25:08,982--本次同步配置共耗时：0.173s
+[ZslCustomsAssist.FormMain-FormMain_Load][337][INFO][1] 2024-06-13 11:25:09,002--客户端启动中...
+[ZslCustomsAssist.FormMain-StartThreads][199][INFO][1] 2024-06-13 11:25:09,011--开启请求报文服务！
+[ZslCustomsAssist.FormMain-StartThreads][205][INFO][1] 2024-06-13 11:25:09,017--开启报文发送服务！
+[ZslCustomsAssist.FormMain-StartThreads][211][INFO][1] 2024-06-13 11:25:09,019--开启回执接收任务！
+[ZslCustomsAssist.Jobs.ReportSendJob-OnDoJob][49][DEBUG][15] 2024-06-13 11:25:10,039--报文发送业务线程，开始!
+[ZslCustomsAssist.Jobs.ReportSendJob-CtrlReportSendThreads][60][INFO][15] 2024-06-13 11:25:10,040--开始处理报文发送业务，预计开启线程数：10
+程序关闭!!!!!!

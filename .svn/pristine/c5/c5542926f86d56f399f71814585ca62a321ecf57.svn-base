@@ -27,7 +27,7 @@ namespace ZslCustomsAssist
         public Thread sendReportScanJobThread = new Thread(new ThreadStart(new SendReportScanJob().OnDoJob));
         public Thread reportSendThread = new Thread(new ThreadStart(new ReportSendJob().OnDoJob));
         public Thread reportQueryThread = new Thread(new ThreadStart(new ReportQueryJob().OnDoJob));
-        //public Thread reportReceiptDownloadThread = new Thread(new ThreadStart(new ReportReceiptDownloadJob().OnDoJob));
+        public Thread reportReceiptDownloadThread = new Thread(new ThreadStart(new ReportReceiptDownloadJob().OnDoJob));
         public Thread reportReceiptWritingThread = new Thread(new ThreadStart(new ReportReceiptWritingJob().OnDoJob));
         public Thread reportReceiptScanThread = new Thread(new ThreadStart(new ReportReceiptScanJob().OnDoJob));
         public Thread checkCardStateThread = new Thread(new ThreadStart(new CheckCardStateJob().OnDoJob));
@@ -206,8 +206,8 @@ namespace ZslCustomsAssist
             //this.reportQueryThread.Start();
             //ServerCore.AddMainLog("开启查询请求报文发送服务！");
             //AbstractFormLog.logger.Info((object)"开启查询请求报文发送服务！");
-            //this.reportReceiptDownloadThread.Start();
-            //ServerCore.AddMainLog("回执接收服务：start...");
+            this.reportReceiptDownloadThread.Start();
+            ServerCore.AddMainLog("回执接收服务：start...");
             AbstractFormLog.logger.Info((object)"开启回执接收任务！");
             this.reportReceiptWritingThread.Start();
             //ServerCore.AddMainLog("开启回执推送任务！");

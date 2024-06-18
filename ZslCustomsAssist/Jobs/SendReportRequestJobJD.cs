@@ -24,7 +24,7 @@ namespace ZslCustomsAssist.Jobs
                 {
                     try
                     {
-                        this.RequestReport();
+                        //this.RequestReport();
                     }
                     catch (Exception ex)
                     {

@@ -78,14 +78,12 @@ namespace ZslCustomsAssist.Jobs
                     AbstractLog.logger.Error((object)JsonConvert.SerializeObject(report, Formatting.Indented) + "请求摘要数据=============================000");
 
                     report.SignInfo = DeclareMessageXmlSign.XmlAbstractSign(report.DigestValue);
-                    report.XmlMessage = DeclareMessageXmlSign.XmlAbstractSign(report.XmlMessage);
                     //对xml字符串做base64处理，防止传递格式出现问题
-                    //string str = report.DigestValue;
-                    string str = report.XmlMessage;
+                    string str = report.DigestValue;
                     byte[] bytes = Encoding.UTF8.GetBytes(str);
                     string base64Str = Convert.ToBase64String(bytes);
-                    //report.DigestValue = base64Str;
-                    report.XmlMessage = base64Str;
+                    report.DigestValue = base64Str;
+
                     string jsonStr = JsonConvert.SerializeObject(report, Formatting.Indented);
                     AbstractLog.logger.Error((object)jsonStr + "请求摘要数据=============================111");
                    

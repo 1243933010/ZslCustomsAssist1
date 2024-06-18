@@ -66,7 +66,7 @@ namespace ZslCustomsAssist.Jobs
                     if (ReportSendJob.reportSendThreads.Count < ServerCore.downloadConfig.GetReceiveThread())
                     {
                         CancellationTokenSource TokenSource = new();
-                        //ThreadsHelper.AddThreads(ReportSendJob.reportSendThreads, new Action(() => this.OnDoReportSend(TokenSource)), TokenSource);
+                        ThreadsHelper.AddThreads(ReportSendJob.reportSendThreads, new Action(() => this.OnDoReportSend(TokenSource)), TokenSource);
                        // AbstractLog.logger.Info((object)("成功添加报文发送线程！当前线程数为：" + (object)ReportSendJob.reportSendThreads.Count + "/" + (object)ServerCore.downloadConfig.GetReceiveThread()));
                     }
                 }
