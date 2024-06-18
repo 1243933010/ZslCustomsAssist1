@@ -721,3 +721,13 @@
 [ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][38] 2024-06-05 11:06:50,773--执行了OnDoReportSend！
 [ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][39] 2024-06-05 11:06:51,780--执行了OnDoReportSend！
 [ZslCustomsAssist.Jobs.ReportSendJob-OnDoReportSend][83][ERROR][40] 2024-06-05 11:06:52,782--执行了OnDoReportSend！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-06-05 11:07:41,788--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-06-05 11:07:41,789--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][370][INFO][21] 2024-06-05 11:07:41,789--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][374][INFO][21] 2024-06-05 11:07:41,789--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][79][INFO][21] 2024-06-05 11:07:41,789--插卡状态正常！2100060064918---2100060064918True
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][0][INFO][21] 2024-06-05 11:08:41,884--【打开设备0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][0][INFO][21] 2024-06-05 11:08:41,885--E-PortMsg--==：打开设备成功！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][0][INFO][21] 2024-06-05 11:08:41,885--【获取卡号0】提示信息！
+[ZslCustomsAssist.SPSecure.SPSecureAPI-SpcGetErrMsg][0][INFO][21] 2024-06-05 11:08:41,885--E-PortMsg--==：获取卡号成功！
+[ZslCustomsAssist.Jobs.CheckCardStateJob-CheckCardState][0][INFO][21] 2024-06-05 11:08:41,885--插卡状态正常！2100060064918---2100060064918True
